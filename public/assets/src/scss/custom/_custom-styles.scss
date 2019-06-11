@@ -74,3 +74,22 @@
 }
 
 
+// media query 
+
+@media ( min-width: 768px ) {
+
+	.ugaam-mobile-adsense-ad {
+
+		display:none;
+	}
+}
+
+@media ( max-width: 768px ) {
+
+	.ugaam-desktop-tablet-adsense-ad {
+
+		display:none;
+	}
+}
+
+
