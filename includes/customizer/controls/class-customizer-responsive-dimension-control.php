@@ -46,7 +46,7 @@
 
 			if( ! empty( $this->description ) ) {
 				?>
-				<span class="customize-control-title"><?php echo esc_html( $this->description ); ?></span>
+				<span class="customize-control-description"><?php echo esc_html( $this->description ); ?></span>
 				<?php
 			}
 

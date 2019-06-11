@@ -370,7 +370,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_image_field
  */
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_responsive_dimension_field' ) ) {
 
-	function universal_google_adsense_and_ads_manager_add_responsive_dimension_field( $id, $label, $desc, $active_callback, $setings, $section ) {
+	function universal_google_adsense_and_ads_manager_add_responsive_dimension_field( $id, $label, $desc, $active_callback, $section ) {
 
 		global $wp_customize;
 
@@ -382,7 +382,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_responsive_
 
 		$control_args = array(
 			'label' => $label,
-			'desciption' => $desc,
+			'description' => $desc,
 			'section' => $section_id,
 		);
 
