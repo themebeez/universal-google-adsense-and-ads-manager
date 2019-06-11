@@ -54,11 +54,11 @@
 
 			if( empty( $values ) ) {
 
-				$values = array( '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' );
-			} else {
-				if( !is_array( $values ) ) {
-					$values = explode( ',', $values );
-				}
+				$values = '0,0,0,0,0,0,0,0,0,0,0,0';
+			} 
+
+			if( !is_array( $values ) ) {
+				$values = explode( ',', $values );
 			}
 
 			if( ! empty( $values ) ) {

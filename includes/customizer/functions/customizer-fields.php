@@ -8,7 +8,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_panel_declarati
 
 		$panels = array(
 			array(
-				'id' => 'eaam',
+				'id' => 'ugaam',
 				'title' => esc_html__( 'Universal Google AdSense &amp; Ad Manager', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
 				'priority' => 300,
@@ -36,42 +36,42 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_section_declara
 				'id' => 'blog_page_ad',
 				'title' => esc_html__( 'Blog Page', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 			array(
 				'id' => 'archive_page_ad',
 				'title' => esc_html__( 'Archive Page', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 			array(
 				'id' => 'single_ad',
 				'title' => esc_html__( 'Single Post/Page', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 			array(
 				'id' => 'sticky_header_ad',
 				'title' => esc_html__( 'Sticky Header Ads', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 			array(
 				'id' => 'sticky_footer_ad',
 				'title' => esc_html__( 'Sticky Footer Ads', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 			array(
 				'id' => 'header_footer_scripts',
 				'title' => esc_html__( 'Header/Footer Scripts', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
-				'panel' => 'eaam',
+				'panel' => 'ugaam',
 				'priority' => 1,
 			),
 		);
@@ -82,11 +82,6 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_section_declara
 
 				universal_google_adsense_and_ads_manager_add_section( $section['id'], $section['title'], $section['description'], $section['panel'], $section['priority'] );
 			}
-		}
-
-		if( class_exists( 'Woocommerce' ) ) {
-
-			universal_google_adsense_and_ads_manager_add_section( 'woocommerce_sidebar', esc_html__( 'Woocommerce Sidebar', 'universal-google-adsense-and-ads-manager' ), '', 'woocommerce', '' );
 		}
 	}
 }

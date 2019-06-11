@@ -40,7 +40,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 				if( !empty( $custom_class ) ) {
 
-					$wrapper_class .= $custom_class;
+					$wrapper_class .= ' '.$custom_class;
 				}
 			}
 
@@ -78,7 +78,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 				if( !empty( $custom_class ) ) {
 
-					$wrapper_class .= $custom_class;
+					$wrapper_class .= ' '.$custom_class;
 				}
 			}
 
@@ -116,7 +116,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 				if( !empty( $custom_class ) ) {
 
-					$wrapper_class .= $custom_class;
+					$wrapper_class .= ' '.$custom_class;
 				}
 			}
 
@@ -159,7 +159,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_w
 
 			if( !empty( $custom_class ) ) {
 
-				$wrapper_class .= $custom_class;
+				$wrapper_class .= ' '.$custom_class;
 			}
 		}
 
@@ -201,7 +201,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_w
 
 			if( !empty( $custom_class ) ) {
 
-				$wrapper_class .= $custom_class;
+				$wrapper_class .= ' '.$custom_class;
 			}
 		}
 
