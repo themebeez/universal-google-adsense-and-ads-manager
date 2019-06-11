@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       Universal Google AdSense And Ad Manager
+ * Plugin Name:       Universal Google AdSense And Ads Manager
  * Plugin URI:        https://themebeez.com/universal-google-adsense-and-ads-manager
- * Description:       Universal Google AdSense And Ad Manager is a simple, and easy to use Google AdSense and custom advertisement manager for your WordPress websites.
+ * Description:       Universal Google AdSense And Ads Manager is a simple, and easy to use Google AdSense and custom advertisement manager for your WordPress websites.
  * Version:           1.0.0
  * Author:            themebeez
  * Author URI:        https://themebeez.com

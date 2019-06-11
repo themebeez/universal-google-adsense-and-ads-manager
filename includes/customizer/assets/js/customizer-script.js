@@ -112,6 +112,7 @@
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.desktop-dimension-fields-wrapper' ).addClass( 'active' );
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.tablet-dimension-fields-wrapper' ).removeClass( 'active' );
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.mobile-dimension-fields-wrapper' ).removeClass( 'active' );
+
 			} else if( btnVal == 'tablet' ) {
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.desktop-dimension-fields-wrapper' ).removeClass( 'active' );
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.tablet-dimension-fields-wrapper' ).addClass( 'active' );
@@ -121,6 +122,8 @@
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.tablet-dimension-fields-wrapper' ).removeClass( 'active' );
 				$( this ).parents( '.customize-control-responsive-dimensions' ).find( '.mobile-dimension-fields-wrapper' ).addClass( 'active' );
 			}
+
+			jQuery( '.wp-full-overlay-footer .devices button[data-device="' + btnVal + '"]' ).trigger( 'click' );
 		} )
 	});
 	

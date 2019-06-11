@@ -12,7 +12,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 		public function loop_start( $query ) {
 
-			if( is_singular() ) {
+			if( is_singular() || ! $query->is_main_query() ) {
 
 				return;
 			}
@@ -72,9 +72,9 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 			}
 		}
 
-		public function loop_end() {
+		public function loop_end( $query ) {
 
-			if( is_singular() ) {
+			if( is_singular() || ! $query->is_main_query() ) {
 
 				return;
 			}
