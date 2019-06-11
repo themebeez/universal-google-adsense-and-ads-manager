@@ -133,7 +133,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_textarea_fi
 
 		$wp_customize->add_setting( $field_id, 
 			array(
-				'sanitize_callback'		=> 'sanitize_textarea_field',
+				'sanitize_callback'		=> 'wp_kses_post',
 				'default'				=> $defaults[$id],
 				'capability'        => 'edit_theme_options',
 			) 
