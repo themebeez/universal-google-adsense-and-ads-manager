@@ -23,7 +23,12 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 
 					ob_start();
 
-					universal_google_adsense_and_ads_manager_ad_content();
+					/**
+			        * Hook - universal_google_adsense_and_ads_manager_ad_content.
+			        *
+			        * @hooked universal_google_adsense_and_ads_manager_ad_content_template - 10
+			        */
+			        do_action( 'universal_google_adsense_and_ads_manager_ad_content' );
 
 					$ad_content = ob_get_contents();
 
@@ -38,7 +43,12 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 
 					ob_start();
 
-					universal_google_adsense_and_ads_manager_ad_content();
+					/**
+			        * Hook - universal_google_adsense_and_ads_manager_ad_content.
+			        *
+			        * @hooked universal_google_adsense_and_ads_manager_ad_content_template - 10
+			        */
+			        do_action( 'universal_google_adsense_and_ads_manager_ad_content' );
 
 					$ad_content = ob_get_contents();
 
