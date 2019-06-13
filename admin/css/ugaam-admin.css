@@ -2,3 +2,51 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+/**
+ * Styles for image upload in Widget
+ */
+
+.ugaam-image-uploader-container {
+
+	display: block;
+}
+
+.ugaam-upload-btn.ugaam-btn-hide,
+.ugaam-remove-btn.ugaam-btn-hide,
+.ugaam-replace-btn.ugaam-btn-hide {
+
+	display: none;
+}
+
+.ugaam-upload-btn.ugaam-btn-show,
+.ugaam-remove-btn.ugaam-btn-show,
+.ugaam-replace-btn.ugaam-btn-show {
+
+	display: inline-block;
+}
+
+.ugaam-upload-image-holder.ugaam-show-img {
+
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.ugaam-upload-image-holder.ugaam-hide-img {
+
+	display: none;
+}
+
+/**
+ * Ad Type Option
+ */
+.uggam-hide-ad-input-field {
+
+	display: none;
+}
+
+.uggam-show-ad-input-field {
+
+	display: block;
+}

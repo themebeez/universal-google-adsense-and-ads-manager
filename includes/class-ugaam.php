@@ -72,6 +72,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 			$this->content_init();
 			$this->sticky_ad_init();
 			$this->customize_init();
+			$this->shortcode_init();
 		}
 
 		/**
@@ -126,6 +127,16 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions/template-hooks.php';
 
 			/**
+			 * Load class responsible for defining ad shortcodes.
+			 */
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions/shortcodes.php';
+
+			/**
+			 * Load ad widgets
+			 */
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/widgets/class-ugaam-ad-widget.php';
+
+			/**
 			 * The class responsible for defining all actions for theme customizer.
 			 */
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/customizer/class-ugaam-customizer.php';
@@ -162,6 +173,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 
 			$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 			$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+			$this->loader->add_action( 'admin_menu', $plugin_admin, 'plugin_menu' );
 		}
 
 		/**
@@ -232,6 +244,17 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 
 			$this->loader->add_action( 'customize_register', $plugin_customize, 'customize_register' );
 			$this->loader->add_action( 'customize_controls_enqueue_scripts', $plugin_customize, 'enqueue_customizer_scripts' );
+		}
+
+		/**
+		 * Register all of the shortcodes.
+		 *
+		 * @since 	 1.0.0	
+		 * @access   public
+		 */
+		public function shortcode_init() {
+
+			$plugin_shortcode = new Universal_Google_AdSense_And_Ad_Manager_Ad_Shortcode();
 		}
 
 		/**
