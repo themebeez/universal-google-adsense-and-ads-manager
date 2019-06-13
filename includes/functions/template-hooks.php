@@ -27,7 +27,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_a
 	function universal_google_adsense_and_ads_manager_before_custom_ad_template() {
 		?>
 		<div class="ugaam-custom-ad">
-			<button type="button" class="uggam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+      
+			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+
 		<?php
 	}
 }
@@ -49,7 +51,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_template() {
 		?>
 		<div class="ugaam-adsense-ad">
-			<button type="button" class="uggam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+
+			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+
 		<?php
 	}
 }
@@ -115,7 +119,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_h
 
 	function universal_google_adsense_and_ads_manager_before_sticky_header_ad_template() {
 		?>
-		<div class="ugaam-ad-wrapper-outer ugaam-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
+		<div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
 		<?php
 	}
 }
@@ -137,7 +141,8 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_f
 
 	function universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template() {
 		?>
-		<div class="ugaam-ad-wrapper-outer ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
+
+		<div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
 			
 		<?php
 	}
