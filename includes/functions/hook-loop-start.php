@@ -12,14 +12,14 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 		public function loop_start( $query ) {
 
-			if( is_singular() || ! $query->is_main_query() ) {
+			if( is_singular() ) {
 
 				return;
 			}
 
 			$enable_ad_in_home = universal_google_adsense_and_ads_manager_get_option( 'enable_ad_in_home' );
 
-			if( is_home() && $query->is_main_query() && $enable_ad_in_home == true ) {
+			if( is_home() && $enable_ad_in_home == true ) {
 
 				$home_ad_position = universal_google_adsense_and_ads_manager_get_option( 'home_ad_position' );
 
@@ -40,13 +40,16 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 						add_action( 'the_post', array( $this, 'inside_loop' ) );
 						add_action( 'loop_end', array( $this, 'inside_loop' ) );
+					} else {
+
+						remove_action( 'the_post', array( $this, 'inside_loop' );
 					}
 				}	
 			}
 
 			$enable_ad_in_archive = universal_google_adsense_and_ads_manager_get_option( 'enable_ad_in_archive' );
 
-			if( is_archive() && $query->is_main_query() && $enable_ad_in_archive == true ) {
+			if( is_archive() && $enable_ad_in_archive == true ) {
 
 				$archive_ad_position = universal_google_adsense_and_ads_manager_get_option( 'archive_ad_position' );
 
@@ -67,6 +70,9 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 						add_action( 'the_post', array( $this, 'inside_loop' ) );
 						add_action( 'loop_end', array( $this, 'inside_loop' ) );
+					} else {
+
+						remove_action( 'the_post', array( $this, 'inside_loop' );
 					}
 				}	
 			}
@@ -74,7 +80,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 		public function loop_end( $query ) {
 
-			if( is_singular() || ! $query->is_main_query() ) {
+			if( is_singular() ) {
 
 				return;
 			}
@@ -112,6 +118,8 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 			        do_action( 'universal_google_adsense_and_ads_manager_ad_content' );
 				}
 			}
+
+			remove_action( 'the_post', array( $this, 'inside_loop' );
 		}
 
 		public function inside_loop() {
