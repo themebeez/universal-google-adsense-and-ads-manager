@@ -85,8 +85,6 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Customize' ) ) {
 			wp_enqueue_style( 'universal-google-adsense-and-ads-manager-customizer-style', plugin_dir_url( __FILE__ ) . 'assets/css/customizer-style.css' );
 
 			wp_enqueue_script( 'universal-google-adsense-and-ads-manager-customizer-script', plugin_dir_url( __FILE__ ) . 'assets/js/customizer-script.js', array( 'jquery' ), UNIVERSAL_GOOGLE_ADSENSE_AND_ADS_MANAGER_VERSION, true );
-
-			wp_enqueue_script( 'universal-google-adsense-and-ads-manager-dimensions', plugin_dir_url( __FILE__ ) . 'assets/js/dimensions.js', array( 'jquery', 'customize-base' ), UNIVERSAL_GOOGLE_ADSENSE_AND_ADS_MANAGER_VERSION, true );
 		}
 	}
 }

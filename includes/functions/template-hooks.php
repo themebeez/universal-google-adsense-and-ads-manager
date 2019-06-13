@@ -27,10 +27,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_a
 	function universal_google_adsense_and_ads_manager_before_custom_ad_template() {
 		?>
 		<div class="ugaam-custom-ad">
-<<<<<<< Updated upstream
-=======
+      
 			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
->>>>>>> Stashed changes
+
 		<?php
 	}
 }
@@ -52,10 +51,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_template() {
 		?>
 		<div class="ugaam-adsense-ad">
-<<<<<<< Updated upstream
-=======
+
 			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
->>>>>>> Stashed changes
+
 		<?php
 	}
 }
@@ -87,7 +85,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_adsense_a
 
 	function universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template() {
 		?>
-		</div">
+		</div>
 		<?php
 	}
 }
@@ -110,7 +108,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_adsense_a
 
 	function universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template() {
 		?>
-		</div">
+		</div>
 		<?php
 	}
 }
@@ -143,12 +141,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_f
 
 	function universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template() {
 		?>
-<<<<<<< Updated upstream
-		<div class="ugaam-ad-wrapper-outer ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
-=======
+
 		<div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
 			
->>>>>>> Stashed changes
 		<?php
 	}
 }
@@ -186,26 +181,34 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'archive_custom_ad_image' );
 				$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'archive_custom_ad_link' );
 
-				if( !empty( $custom_ad_img ) && !empty( $custom_ad_link ) ) {
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
 
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+		        if( !empty( $custom_ad_link ) ) {
 			        ?>
-			        <a href="<?php echo esc_url( $custom_ad_link ); ?>">
-			        	<img src="<?php echo esc_url( $custom_ad_img ); ?>">
-			        </a>
-			        <?php
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-				}
+			        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
+			   	}
+
+			   	if( !empty( $custom_ad_img ) ) {
+			   		?>
+		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
+			   	}
+			   	
+			   	if( !empty( $custom_ad_link ) ) {
+			        ?>
+		        	</a>
+		        	<?php
+		        }
+		        /**
+		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
 			} else {
 
 				$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'archive_ad_script_desk_n_tab' );
@@ -214,11 +217,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
@@ -229,7 +232,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -248,7 +251,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -259,11 +262,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 					}
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
 				}
 			}
 		}  
@@ -277,26 +280,34 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'home_custom_ad_image' );
 				$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'home_custom_ad_link' );
 
-				if( !empty( $custom_ad_img ) && !empty( $custom_ad_link ) ) {
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
 
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+		        if( !empty( $custom_ad_link ) ) {
 			        ?>
-			        <a href="<?php echo esc_url( $custom_ad_link ); ?>">
-			        	<img src="<?php echo esc_url( $custom_ad_img ); ?>">
-			        </a>
-			        <?php
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-				}
+			        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
+			   	}
+
+			   	if( !empty( $custom_ad_img ) ) {
+			   		?>
+		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
+			   	}
+
+			   	if( !empty( $custom_ad_link ) ) {
+			        ?>
+		        	</a>
+		        	<?php
+		        }
+		        /**
+		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
 			} else {
 
 				$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'home_ad_script_desk_n_tab' );
@@ -305,11 +316,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
@@ -320,7 +331,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -339,7 +350,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -350,11 +361,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 					}
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
 				}
 			}
 		}
@@ -368,26 +379,32 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'post_page_custom_ad_image' );
 				$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'post_page_custom_ad_link' );
 
-				if( !empty( $custom_ad_img ) && !empty( $custom_ad_link ) ) {
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
 
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+		        if( !empty( $custom_ad_link ) ) {
 			        ?>
-			        <a href="<?php echo esc_url( $custom_ad_link ); ?>">
-			        	<img src="<?php echo esc_url( $custom_ad_img ); ?>">
-			        </a>
-			        <?php
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-				}
+			        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
+			   	}
+			   	if( !empty( $custom_ad_img ) ) {
+			   		?>
+		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
+			   	}			   	
+			   	if( !empty( $custom_ad_link ) ) {
+			        ?>
+		        	</a>
+		        	<?php
+		        }
+		        /**
+		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
 			} else {
 
 				$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'post_page_ad_script_desk_n_tab' );
@@ -396,11 +413,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
@@ -411,7 +428,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -430,7 +447,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -441,11 +458,11 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 					}
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
+			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
 				}
 			}
 		}
@@ -479,26 +496,34 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 			$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'header_custom_ad_image' );
 			$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'header_custom_ad_link' );
 
-			if( !empty( $custom_ad_img ) && !empty( $custom_ad_link ) ) {
+			/**
+	        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+	        *
+	        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+	        */
+	        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
 
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+	        if( !empty( $custom_ad_link ) ) {
 		        ?>
-		        <a href="<?php echo esc_url( $custom_ad_link ); ?>">
-		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>">
-		        </a>
-		        <?php
-		        /**
-		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-			}
+		        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
+		   	}
+
+		   	if( !empty( $custom_ad_img ) ) {
+		   		?>
+	        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
+		   	}
+		   	
+		   	if( !empty( $custom_ad_link ) ) {
+		        ?>
+	        	</a>
+	        	<?php
+	        }
+	        /**
+	        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+	        *
+	        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+	        */
+	        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
 		} else {
 
 			$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'header_ad_script_desk_n_tab' );
@@ -506,58 +531,58 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 
 			if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+					/**
+			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
+			        *
+			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
+			        */
+			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
 
-				if( !empty( $desktop_tablet_adsense ) ) {
+					if( !empty( $desktop_tablet_adsense ) ) {
+
+						/**
+				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
+
+				        echo stripslashes( $desktop_tablet_adsense );
+
+				        /**
+				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					}
+
+					if( !empty( $mobile_adsense ) ) {
+
+						/**
+				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
+
+				        echo stripslashes( $mobile_adsense );
+
+				        /**
+				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					}
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
-
-			        echo wp_kses_post( $desktop_tablet_adsense );
-
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
 				}
-
-				if( !empty( $mobile_adsense ) ) {
-
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
-
-			        echo wp_kses_post( $mobile_adsense );
-
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
-				}
-
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-			}
 		}
 
 		/**
@@ -589,26 +614,34 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 			$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'footer_custom_ad_image' );
 			$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'footer_custom_ad_link' );
 
-			if( !empty( $custom_ad_img ) && !empty( $custom_ad_link ) ) {
+			/**
+	        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
+	        *
+	        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
+	        */
+	        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
 
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+	        if( !empty( $custom_ad_link ) ) {
 		        ?>
-		        <a href="<?php echo esc_url( $custom_ad_link ); ?>">
-		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>">
-		        </a>
-		        <?php
-		        /**
-		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-			}
+		        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
+		   	}
+
+		   	if( !empty( $custom_ad_img ) ) {
+		   		?>
+	        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
+		   	}
+		   	
+		   	if( !empty( $custom_ad_link ) ) {
+		        ?>
+	        	</a>
+	        	<?php
+	        }
+	        /**
+	        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
+	        *
+	        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
+	        */
+	        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
 		} else {
 
 			$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'footer_ad_script_desk_n_tab' );
@@ -616,58 +649,58 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 
 			if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_before_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_before_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_before_custom_ad' );
+					/**
+			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
+			        *
+			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
+			        */
+			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
 
-				if( !empty( $desktop_tablet_adsense ) ) {
+					if( !empty( $desktop_tablet_adsense ) ) {
+
+						/**
+				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
+
+				        echo stripslashes( $desktop_tablet_adsense );
+
+				        /**
+				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					}
+
+					if( !empty( $mobile_adsense ) ) {
+
+						/**
+				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
+
+				        echo stripslashes( $mobile_adsense );
+
+				        /**
+				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
+				        *
+				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
+				        */
+				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					}
 
 					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
 			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
 			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
-
-			        echo wp_kses_post( $desktop_tablet_adsense );
-
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
 				}
-
-				if( !empty( $mobile_adsense ) ) {
-
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
-
-			        echo wp_kses_post( $mobile_adsense );
-
-			        /**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
-				}
-
-				/**
-		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
-		        *
-		        * @hooked universal_google_adsense_and_ads_manager_after_custom_ad_template - 10
-		        */
-		        do_action( 'universal_google_adsense_and_ads_manager_after_custom_ad' );
-			}
 		}
 
 		/**
