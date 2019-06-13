@@ -51,7 +51,6 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-
 	}
 
 	/**
@@ -74,7 +73,6 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ugaam-admin.css', array(), $this->version, 'all' );
-
 	}
 
 	/**
@@ -96,8 +94,30 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ugaam-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'media-upload' );
 
+		wp_enqueue_media();
+
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ugaam-admin.js', array( 'jquery' ), $this->version, false );
 	}
 
+	/**
+	 * Register plugin menu in dashboard.
+	 *
+	 * @since    1.0.0
+	 */
+	public function plugin_menu() {
+
+		add_menu_page( 'Universal Google AdSense And Ads Manager', 'UGGAM', 'manage_options', 'ugaam', array( $this, 'plugin_page' ), 'dashicons-screenoptions' );
+	}
+
+	/**
+	 * Register plugin page.
+	 *
+	 * @since    1.0.0
+	 */
+	public function plugin_page() {
+
+		require_once plugin_dir_path( __FILE__ ) . 'partials/ugaam-admin-display.php';
+	}
 }

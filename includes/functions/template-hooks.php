@@ -27,6 +27,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_a
 	function universal_google_adsense_and_ads_manager_before_custom_ad_template() {
 		?>
 		<div class="ugaam-custom-ad">
+			<button type="button" class="uggam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
 		<?php
 	}
 }
@@ -48,6 +49,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_template() {
 		?>
 		<div class="ugaam-adsense-ad">
+			<button type="button" class="uggam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
 		<?php
 	}
 }
@@ -136,6 +138,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_f
 	function universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template() {
 		?>
 		<div class="ugaam-ad-wrapper-outer ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
+			
 		<?php
 	}
 }
@@ -224,7 +227,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -243,7 +246,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -323,7 +326,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -342,7 +345,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -420,7 +423,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -439,7 +442,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -539,7 +542,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -558,7 +561,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
@@ -657,7 +660,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        echo wp_kses_post( $desktop_tablet_adsense );
+				        echo stripslashes( $desktop_tablet_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
@@ -676,7 +679,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        echo wp_kses_post( $mobile_adsense );
+				        echo stripslashes( $mobile_adsense );
 
 				        /**
 				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
