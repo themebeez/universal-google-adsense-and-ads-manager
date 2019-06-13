@@ -12,7 +12,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 		public function loop_start( $query ) {
 
-			if( is_singular() ) {
+			if( is_singular() || ! $query->is_main_query() ) {
 
 				return;
 			}
@@ -42,7 +42,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 						add_action( 'loop_end', array( $this, 'inside_loop' ) );
 					} else {
 
-						remove_action( 'the_post', array( $this, 'inside_loop' );
+						remove_action( 'the_post', array( $this, 'inside_loop' ) );
 					}
 				}	
 			}
@@ -72,7 +72,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 						add_action( 'loop_end', array( $this, 'inside_loop' ) );
 					} else {
 
-						remove_action( 'the_post', array( $this, 'inside_loop' );
+						remove_action( 'the_post', array( $this, 'inside_loop' ) );
 					}
 				}	
 			}
@@ -80,7 +80,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 		public function loop_end( $query ) {
 
-			if( is_singular() ) {
+			if( is_singular() || ! $query->is_main_query() ) {
 
 				return;
 			}
@@ -119,7 +119,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 				}
 			}
 
-			remove_action( 'the_post', array( $this, 'inside_loop' );
+			remove_action( 'the_post', array( $this, 'inside_loop' ) );
 		}
 
 		public function inside_loop() {
