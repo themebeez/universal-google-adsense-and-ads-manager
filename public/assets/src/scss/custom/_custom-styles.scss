@@ -14,10 +14,12 @@
 }
 
 .ugaam-ad-wrapper-outer iframe {
-
+	
+	position: relative;
 	display:block;
 	width:100%;
-	min-height: 1px !important;
+	min-height: 1px;
+	max-height: auto;
 }
 
 .ugaam-custom-ad,
