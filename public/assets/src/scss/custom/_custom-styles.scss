@@ -19,6 +19,12 @@
 	width:100%;
 }
 
+.ugaam-custom-ad,
+.ugaam-adsense-ad {
+
+	position: relative;
+	display:inline-block;
+}
 
 
 // advertisement aligment 
@@ -69,6 +75,66 @@
 
 	top:auto;
 	bottom:0;
+}
+
+
+// buttons 
+
+
+button.ugaam-ad-close-button {
+
+	display:none;
+	position: absolute;
+    left: auto;
+    right: -24px;
+    top: -1px;
+    bottom: auto;
+    color:#555555;
+    background:#ffffff;
+    border:none;
+    height:25px;
+    width: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    text-align: center;
+    text-shadow: none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -o-border-radius:0;
+    -ms-border-radius:0;
+    border-radius:0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+button.ugaam-ad-close-button i {
+
+	height:auto;
+	width:auto;
+	font-size: 12px;
+	line-height: unset;
+}
+
+[class*="ugaam-sticky-"] button.ugaam-ad-close-button  {
+
+	display:block;
+
+}
+
+[class*="ugaam-sticky-"] button.ugaam-ad-close-button:hover {
+
+	color:#666666;
+	background:#ffffff;
+	border:none;
+}
+
+[class*="ugaam-sticky-"] button.ugaam-ad-close-button:focus {
+
+	background-color:#ffffff;
+	outline:none;
+	border:none;
 }
 
 

@@ -108,7 +108,7 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 	 */
 	public function plugin_menu() {
 
-		add_menu_page( 'Universal Google AdSense And Ads Manager', 'UGGAM', 'manage_options', 'ugaam', array( $this, 'plugin_page' ), 'dashicons-screenoptions' );
+		add_menu_page( 'Universal Google AdSense And Ads Manager', 'UGAAM', 'manage_options', 'ugaam', array( $this, 'plugin_page' ), 'dashicons-buddicons-topics' );
 	}
 
 	/**
