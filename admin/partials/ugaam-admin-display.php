@@ -27,7 +27,7 @@
                             </h2>
                         </div><!-- // ugaam-plugin-title -->
                         <div class="ugaam-plugin-intro">
-                            <p>Universal Google Adsense and Ads manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetization your website easily. UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: mgid, buy sell ads, Bidvertiser, affiliates ads etc )</p>
+                            <p><?php _e( 'Universal Google Adsense and Ads manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetization your website easily. UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: mgid, buy sell ads, Bidvertiser, affiliates ads etc )', 'universal-google-adsense-and-ads-manager' ); ?></p>
                         </div><!-- // ugaam-plugin-intro -->
                     </section><!-- // ugaam-welcome-section ug-white-bg -->
                     <section class="ugaam-features-section ug-section-spacing">
@@ -43,7 +43,7 @@
                                         </h3>
                                     </div><!-- // ug-title -->
                                     <div class="ug-description">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                        <p><?php _e( 'Monetize your website with Google Adsense without any hassle. Start earning just adding your Adsense code from customizer', 'universal-google-adsense-and-ads-manager' ); ?></p>
                                     </div><!-- // ug-description -->
                                 </div><!-- // ug-card -->
                             </div><!-- // ug-col -->
@@ -58,7 +58,7 @@
                                         </h3>
                                     </div><!-- // ug-title -->
                                     <div class="ug-description">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                        <p><?php _e( 'UGAAM is not just limited to Google Adsense, feel the freedom to monetize your website using other ads network too', 'universal-google-adsense-and-ads-manager' ); ?></p>
                                     </div><!-- // ug-description -->
                                 </div><!-- // ug-card -->
                             </div><!-- // ug-col -->
@@ -73,7 +73,7 @@
                                         </h3>
                                     </div><!-- // ug-title -->
                                     <div class="ug-description">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                        <p><?php _e( 'Woundering to insert any javascript code to either verify your domain or for different reason, UGAAM makes it simple', 'universal-google-adsense-and-ads-manager' ); ?></p>
                                     </div><!-- // ug-description -->
                                 </div><!-- // ug-card -->
                             </div><!-- // ug-col -->
@@ -87,31 +87,55 @@
                         </div><!-- // ugaam-section-title -->
                         <div class="ug-started-inner">
                             <div class="ug-accordion">
-                            	<h4>Q.1: How can I verify my domain with Google Adsense?</h4>
+                            	<h4><?php _e( 'Q.1: Where can I insert Google domain verification code?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
                             </div>
                             <div class="ugpanel">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div class="ug-accordion">
-                            	<h4>Q.2: How can I insert my Google Adsense advertisement code?</h4>
-                        	</div>
-                            <div class="ugpanel">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p><?php _e( 'To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager', 'universal-google-adsense-and-ads-manager' ); ?></p>
                             </div>
                             <div class="ug-accordion">
-                            	<h4>Q.3: Where can I insert custom banner advertisements?</h4>
+                            	<h4><?php _e( 'Q.2: How can I insert my Google Adsense advertisement code?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
                         	</div>
                             <div class="ugpanel">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p><?php _e( 'To insert your Google adsense code go to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                            </div>
+                            <div class="ug-accordion">
+                            	<h4><?php _e( 'Q.3: Can I use custom image banner ads?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
+                        	</div>
+                            <div class="ugpanel">
+                                <p><?php _e( 'Yes, you can do that. In order to upload your custom banner advertisement go to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager.', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                            </div>
+                             <div class="ug-accordion">
+                                <h4><?php _e( 'Q.4: Can I use other advertisement network ads?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
+                            </div>
+                            <div class="ugpanel">
+                                <p><?php _e( 'Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc.', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                            </div>
+                            <div class="ug-accordion">
+                                <h4><?php _e( 'Q.5: Do you provide free support?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
+                            </div>
+                            <div class="ugpanel">
+                                <p><?php _e( 'Yes, we do. Kindly contact us from <a href="https://themebeez.com/support/">Support page</a> directly.' ); ?></p>
                             </div>
                         </div><!-- // ug-started-inner -->
                     </section><!-- // ugaam-welcome-section ug-white-bg -->
                 </div><!-- // ug-col -->
                 <div class="ug-col sidebar right">
-                    <aside class="ug-aside ug-white-bg ug-section-shadow">
-                    	<div class="ug-video">
+                    <aside class="ug-aside">
+                    	<!-- <div class="ug-video ug-section-shadow ug-section-spacing">
                     		<iframe src="https://www.youtube.com/embed/9hEINOPaWXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    	</div><!-- // ug-video -->
+                    	</div> --><!-- // ug-video -->
+                        <div class="ug-buttons ug-white-bg ug-section-shadow">
+                        <div class="ugaam-section-title">
+                            <h2>Quick Links ...</h2>                                
+                        </div>
+                            <ul>
+                                <li><a href="#" target="_blank">Insert Scripts</a></li>
+                                <li><a href="#" target="_blank">Insert Ads</a></li>
+                                <li><a href="#" target="_blank">UGAAM Documenation</a></li>
+                                <li><a href="#" target="_blank">Get Support</a></li>
+                                <li><a href="#" target="_blank">Rate UGAAM</a></li>
+                            </ul>
+                        </div><!-- // ug-buttons -->
                     </aside><!-- // ug-aside -->
                 </div><!-- // ug-col -->
             </div><!-- / ug-row -->
