@@ -13,7 +13,7 @@ Universal Google Adsense and Ads manager is a flexible easy to use Google Adsens
 
 == Description ==
 
-[Universal Google Adsense and Ads manager](https://themebeez.com/plugin/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetise your website easily.
+[Universal Google Adsense and Ads manager](https://themebeez.com/plugins/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetise your website easily.
 
 UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: MGID, buy sell ads, Bidvertiser, affiliates ads etc ).
 
@@ -105,7 +105,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 == ACTIVE DEVELOPMENT & SUPPORT == 
 
-We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our support page or through UGAAM plugin review.
+We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our (support page)[https://themebeez.com/support/] or through UGAAM plugin review.
 
 
 == END USERS ROLE ==
@@ -122,8 +122,8 @@ If you love this plugin, We would like to welcome you to join your hands with us
 
 == IMPORTANT LINKS == 
 
-* Plugin page: [Click here](https://themebeez.com/plugin/universal-google-adsense-ads-manager)
-* Plugin documenation page: [Click here](https://themebeez.com/universal-google-adsense-ads-manager-documentation)
+* Plugin page: [Click here](https://themebeez.com/plugins/universal-google-adsense-ads-manager)
+* Plugin documenation page: [Click here](https://themebeez.com/ugaam-documentation)
 * Plugin review/feedback: [Click here] (https://wordpress.org/pugins/)
 * Plugin support/bug report: [Click here] (https://themebeez.com/support/)
 
