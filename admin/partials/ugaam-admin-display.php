@@ -58,7 +58,7 @@
                                         </h3>
                                     </div><!-- // ug-title -->
                                     <div class="ug-description">
-                                        <p><?php _e( 'UGAAM is not just limited to Google Adsense, feel the freedom to monetize your website using other ads network too', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                                        <p><?php _e( 'UGAAM is not just limited to Google Adsense, feel the freedom to monetise your website using other ads network too', 'universal-google-adsense-and-ads-manager' ); ?></p>
                                     </div><!-- // ug-description -->
                                 </div><!-- // ug-card -->
                             </div><!-- // ug-col -->
@@ -73,7 +73,7 @@
                                         </h3>
                                     </div><!-- // ug-title -->
                                     <div class="ug-description">
-                                        <p><?php _e( 'Woundering to insert any javascript code to either verify your domain or for different reason, UGAAM makes it simple', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                                        <p><?php _e( 'Wondering how to insert any scripts to either verify your domain or for different reason, UGAAM makes it simple', 'universal-google-adsense-and-ads-manager' ); ?></p>
                                     </div><!-- // ug-description -->
                                 </div><!-- // ug-card -->
                             </div><!-- // ug-col -->
@@ -90,7 +90,7 @@
                             	<h4><?php _e( 'Q.1: Where can I insert Google domain verification code?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
                             </div>
                             <div class="ugpanel">
-                                <p><?php _e( 'To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager', 'universal-google-adsense-and-ads-manager' ); ?></p>
+                                <p><?php _e( 'To verify your domian with Google, kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager', 'universal-google-adsense-and-ads-manager' ); ?></p>
                             </div>
                             <div class="ug-accordion">
                             	<h4><?php _e( 'Q.2: How can I insert my Google Adsense advertisement code?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
@@ -114,26 +114,23 @@
                                 <h4><?php _e( 'Q.5: Do you provide free support?', 'universal-google-adsense-and-ads-manager' ); ?></h4>
                             </div>
                             <div class="ugpanel">
-                                <p><?php _e( 'Yes, we do. Kindly contact us from <a href="https://themebeez.com/support/">Support page</a> directly.' ); ?></p>
+                                <p><?php _e( 'Yes, we do. Kindly contact us from <a href="https://themebeez.com/support/">Support page</a> directly or drop your mail at themebeez@gmail.com.', 'universal-google-adsense-and-ads-manager' ); ?></p>
                             </div>
                         </div><!-- // ug-started-inner -->
                     </section><!-- // ugaam-welcome-section ug-white-bg -->
                 </div><!-- // ug-col -->
                 <div class="ug-col sidebar right">
                     <aside class="ug-aside">
-                    	<!-- <div class="ug-video ug-section-shadow ug-section-spacing">
-                    		<iframe src="https://www.youtube.com/embed/9hEINOPaWXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    	</div> --><!-- // ug-video -->
                         <div class="ug-buttons ug-white-bg ug-section-shadow">
                         <div class="ugaam-section-title">
-                            <h2>Quick Links ...</h2>                                
+                            <h2><?php _e( 'Quick Links ...', 'universal-google-adsense-and-ads-manager' ); ?></h2>                                
                         </div>
                             <ul>
-                                <li><a href="#" target="_blank">Insert Scripts</a></li>
-                                <li><a href="#" target="_blank">Insert Ads</a></li>
-                                <li><a href="#" target="_blank">UGAAM Documenation</a></li>
-                                <li><a href="#" target="_blank">Get Support</a></li>
-                                <li><a href="#" target="_blank">Rate UGAAM</a></li>
+                                <li><a href="<?php echo esc_url( wp_customize_url() ); ?>" target="_blank"><?php _e( 'Insert Scripts', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
+                                <li><a href="<?php echo esc_url( wp_customize_url() ); ?>" target="_blank"><?php _e( 'Insert Ads', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
+                                <li><a href="https://themebeez.com/ugaam-documentation/" target="_blank"><?php _e( 'UGAAM Documenation', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
+                                <li><a href="https://themebeez.com/support/" target="_blank"><?php _e( 'Get Support', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
+                                <li><a href="https://wordpress.org/plugins/universal-google-adsense-and-ads-manager/#reviews" target="_blank"><?php _e( 'Rate UGAAM', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
                             </ul>
                         </div><!-- // ug-buttons -->
                     </aside><!-- // ug-aside -->
