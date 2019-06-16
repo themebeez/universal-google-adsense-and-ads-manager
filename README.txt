@@ -13,11 +13,11 @@ Universal Google Adsense and Ads manager is a flexible easy to use Google Adsens
 
 == Description ==
 
-[Universal Google Adsense and Ads manager](https://themebeez.com/plugin/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetization your website easily.
+[Universal Google Adsense and Ads manager](https://themebeez.com/plugin/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetise your website easily.
 
 UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: MGID, buy sell ads, Bidvertiser, affiliates ads etc ).
 
-Below is the brief introduction of UGAAM . Kindly feel free to go through each & every line of black ink before you install this plugin.
+Below is the brief introduction of UGAAM. Kindly feel free to go through each & every line of black ink before you install this plugin.
 
 
 == UGAAM FEATURES ==
@@ -27,13 +27,13 @@ Below are the features of UGAAM plugin:
 * Insert JavaScript to verify services like Google domain verification, Google analytics tracking code, Pinterest domain verification, MailChimp verification etc to header or footer
 * Sticky header advertisement
 * Sticky footer advertisement
-* Insert Google Adsense & other JavaScript based advertisement scripts to homepage
+* Insert Google Adsense & other Script based advertisement scripts to homepage
 * Insert custom banner image advertisement to homepage
-* Insert  Google Adsense & other JavaScript based advertisement scripts to Archive/Category page
+* Insert  Google Adsense & other Script based advertisement scripts to Archive/Category page
 * Insert custom banner image advertisement to Archive/Category page
-* Insert  Google Adsense & other JavaScript based advertisement scripts to page single & blog post single
+* Insert  Google Adsense & other Script based advertisement scripts to page single & blog post single
 * Insert custom banner image advertisement to page single & blog post single
-* Insert Google Adsense, other JavaScript based advertisement scripts to widgets area like ( sidebar, footer & other widgets area )
+* Insert Google Adsense, other Script based advertisement scripts to widgets area like ( sidebar, footer & other widgets area )
 
 
 == ADVERTISEMENT  TYPES ==
@@ -41,7 +41,7 @@ Below are the features of UGAAM plugin:
 UGAAM supports three types of advertisement. Below are the types of advertisements:
 
 * Google Adsense ( Including auto Google auto ads )
-* A custom advertisement that works with JavaScript code ( Example: Buy Sell ads, MGID, Affiliates Ads etc. )
+* A custom advertisement that works with Script code ( Example: Buy Sell ads, MGID, Affiliates Ads etc. )
 * A custom image banner ads where banner image can be uploaded with the link 
 
 
@@ -52,8 +52,9 @@ UGAAM supports three types of advertisement. Below are the types of advertisemen
 * Footer ( Sticky )
 * Footer ( through UGAAM widget )
 * Blog posts
-* Archive/Category/Search page
-* Page single / Blog single 
+* Archive/Category page
+* Post/Page single 
+* Widget areas via custom ad widget
 * Every possible area with shortcodes
 
 
@@ -73,14 +74,17 @@ You can display an advertisement using shortcode anywhere on your website. Below
         [ugaam_ad] <--- Your advertisement code goes here ---> [/ugaam_ad]
 ``
 
-**Multiple Advertisement Example :**
+**Multiple Advertisements Example :**
 
 
 ``
         [ugaam_ad] 
         <--- Your advertisement code goes here --->
+        <!-- ad -->
         <--- The second advertisement code goes here --->
+        <!-- ad -->
         <--- The third advertisement code goes here --->
+        <!-- ad -->
         <--- The fourth advertisement code goes here --->  
         [/ugaam_ad]
 ``
@@ -89,7 +93,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 == INSTALLATION ==
 
 * Navigate to Dashboard > Appearance > Plugins 
-* Click on Add new 
+* Click on Add new button
 * Search term “Universal Google Adsense and Ads manager”
 * Click install 
 * Once installed, click Activate
@@ -118,36 +122,53 @@ If you love this plugin, We would like to welcome you to join your hands with us
 
 == IMPORTANT LINKS == 
 
-* Plugin page: 
-* Plugin documenation page: 
-* Plugin review/feedback: 
-* Plugin support/bug report: 
+* Plugin page: [Click here](https://themebeez.com/plugin/universal-google-adsense-ads-manager)
+* Plugin documenation page: [Click here](https://themebeez.com/universal-google-adsense-ads-manager-documentation)
+* Plugin review/feedback: [Click here] (https://wordpress.org/pugins/)
+* Plugin support/bug report: [Click here] (https://themebeez.com/support/)
 
 
 
 == Frequently Asked Questions ==
 
-= How can I verify my domain with Google Adsense? =
 
-Answer
+= Where can I insert Google domain verification code? =
+
+To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager 
+
 
 = How can I insert my Google Adsense advertisement code? =
 
-Answer
+To insert your Google adsense code go to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager 
+
 
 = Can I use custom image banner ads? =
 
-Answer
+Yes
+
+
+= Can I use other advertisement network ads? =
+
+Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc.
+
+
+= Do you provide free support? =
+
+Yes, we do. Kindly visit us at ( support page )[https://themebeez.com/support/] & ask for support. 
+
+
+= What are the upcoming features? =
+
+Google AMP support, GDPR support & many more...
 
 
 
 == Screenshots ==
 
-1. ugaam welcome page
-2. ugaam customizer script manager section
-3. ugaam customizer ads section
-4. ugaam homepage ads 
-4. ugaam widget 
+1. UGAAM welcome page
+2. UGAAM at customizer
+3. UGAAM customizer script manager section
+4. UGAAM widget 
 
 
 == Changelog ==
