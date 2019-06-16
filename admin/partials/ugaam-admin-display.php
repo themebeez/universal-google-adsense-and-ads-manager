@@ -27,7 +27,7 @@
                             </h2>
                         </div><!-- // ugaam-plugin-title -->
                         <div class="ugaam-plugin-intro">
-                            <p>Universal Google Adsense & Ads manager is a contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical.</p>
+                            <p>Universal Google Adsense and Ads manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetization your website easily. UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: mgid, buy sell ads, Bidvertiser, affiliates ads etc )</p>
                         </div><!-- // ugaam-plugin-intro -->
                     </section><!-- // ugaam-welcome-section ug-white-bg -->
                     <section class="ugaam-features-section ug-section-spacing">
