@@ -52,6 +52,24 @@
 	display: block;
 }
 
+
+/*
+* Style for widget colour 
+*/
+
+.widgets-holder-wrap [id*="universal-google-adsense-and-ads-manager"] .widget-top {
+
+
+    box-shadow: none !important;
+    border: none !important;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #ffdde1, #ee9ca7);
+    background: -o-linear-gradient(left, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
 /**
 * Plugin page at dashboard 
 */
@@ -359,7 +377,6 @@
 .ug-buttons ul li a {
 
 	display: block;
-	background-color: #437DE6;
 	color: #ffffff;
 	padding: 20px 20px;
 	line-height: 1;
@@ -378,18 +395,35 @@
 	-moz-transition: all 0.7s ease;
 	-o-transition: all 0.7s ease;
 	transition: all 0.7s ease;
+	background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+    background: -o-linear-gradient(left, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .ug-buttons ul li:nth-child(even) a {
 
-	background-color: #F4B913;
+	background: #FDC830;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    background: linear-gradient(to right, #F37335, #FDC830);
 } 
 
 
-.ug-buttons ul li a:hover,
+.ug-buttons ul li a:hover {
+
+	background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #00c6ff, #0072ff);
+    background: -o-linear-gradient(left, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #00c6ff, #0072ff);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .ug-buttons ul li:nth-child(even) a:hover {
 
-	background-color: #333333;
+	background: #FDC830;
+    background: -webkit-linear-gradient(left, #FDC830, #F37335);
+    background: -o-linear-gradient(left, #FDC830, #F37335);
+    background: linear-gradient(to right, #FDC830, #F37335);
 }
 
 
