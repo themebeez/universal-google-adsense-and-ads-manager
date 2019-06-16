@@ -87,7 +87,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 			$enable_ad_in_home = universal_google_adsense_and_ads_manager_get_option( 'enable_ad_in_home' );
 
-			if( is_home() && $enable_ad_in_home == true ) {
+			if( is_home() && $query->is_main_query() && $enable_ad_in_home == true ) {
 
 				$home_ad_position = universal_google_adsense_and_ads_manager_get_option( 'home_ad_position' );
 
@@ -104,7 +104,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Loop' ) ) {
 
 			$enable_ad_in_archive = universal_google_adsense_and_ads_manager_get_option( 'enable_ad_in_archive' );
 
-			if( is_archive() && $enable_ad_in_archive  == true ) {
+			if( is_archive() && $query->is_main_query() && $enable_ad_in_archive  == true ) {
 
 				$archive_ad_position = universal_google_adsense_and_ads_manager_get_option( 'archive_ad_position' );
 

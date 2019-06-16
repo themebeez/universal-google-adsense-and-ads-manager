@@ -1,114 +1,184 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://themebeez.com
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Contributors: themebeez
+Donate link: https://themebeez.com/
+Tags: AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, adverts, advert, amazon, banner, banners, buysellads, clickbank, mgid, doubleclick
+Requires at least: 4.8
+Tested up to: 5.2
+Requires PHP: 5.6
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Universal Google Adsense and Ads manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. 
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+[Universal Google Adsense and Ads manager](https://themebeez.com/plugin/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetise your website easily.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: MGID, buy sell ads, Bidvertiser, affiliates ads etc ).
 
-A few notes about the sections above:
+Below is the brief introduction of UGAAM. Kindly feel free to go through each & every line of black ink before you install this plugin.
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+== UGAAM FEATURES ==
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+Below are the features of UGAAM plugin: 
 
-== Installation ==
+* Insert JavaScript to verify services like Google domain verification, Google analytics tracking code, Pinterest domain verification, MailChimp verification etc to header or footer
+* Sticky header advertisement
+* Sticky footer advertisement
+* Insert Google Adsense & other Script based advertisement scripts to homepage
+* Insert custom banner image advertisement to homepage
+* Insert  Google Adsense & other Script based advertisement scripts to Archive/Category page
+* Insert custom banner image advertisement to Archive/Category page
+* Insert  Google Adsense & other Script based advertisement scripts to page single & blog post single
+* Insert custom banner image advertisement to page single & blog post single
+* Insert Google Adsense, other Script based advertisement scripts to widgets area like ( sidebar, footer & other widgets area )
 
-This section describes how to install the plugin and get it working.
 
-e.g.
+== ADVERTISEMENT  TYPES ==
 
-1. Upload `universal-google-adsense-and-ads-manager.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+UGAAM supports three types of advertisement. Below are the types of advertisements:
+
+* Google Adsense ( Including auto Google auto ads )
+* A custom advertisement that works with Script code ( Example: Buy Sell ads, MGID, Affiliates Ads etc. )
+* A custom image banner ads where banner image can be uploaded with the link 
+
+
+== ADS INJECTION & PLACEMENT == 
+
+* Header ( Sticky )
+* Header advertisement area that any theme allows ( through UGAAM widget )
+* Footer ( Sticky )
+* Footer ( through UGAAM widget )
+* Blog posts
+* Archive/Category page
+* Post/Page single 
+* Widget areas via custom ad widget
+* Every possible area with shortcodes
+
+
+== GOOGLE AMP SUPPORT ==
+
+We will be releasing Google AMP supported in very soon.
+
+
+== SHORTCODE SUPPORT == 
+
+You can display an advertisement using shortcode anywhere on your website. Below is the format of the shortcode.
+
+**Single Advertisement Example :**
+
+
+``
+        [ugaam_ad] <--- Your advertisement code goes here ---> [/ugaam_ad]
+``
+
+**Multiple Advertisements Example :**
+
+
+``
+        [ugaam_ad] 
+        <--- Your advertisement code goes here --->
+        <!-- ad -->
+        <--- The second advertisement code goes here --->
+        <!-- ad -->
+        <--- The third advertisement code goes here --->
+        <!-- ad -->
+        <--- The fourth advertisement code goes here --->  
+        [/ugaam_ad]
+``
+
+
+== INSTALLATION ==
+
+* Navigate to Dashboard > Appearance > Plugins 
+* Click on Add new button
+* Search term “Universal Google Adsense and Ads manager”
+* Click install 
+* Once installed, click Activate
+* Once UGAAM is activated, you can view UGAAM welcome page at Dashboard > UGAAM 
+* To insert advertisement & other scripts go to Dashboard > Appearance > Customizer > Universal Google Adsense and Ads manager
+* To insert ads in widget area like sidebar/footer & other widgets area go to Dashboard > Appearance > Widgets
+
+
+
+== ACTIVE DEVELOPMENT & SUPPORT == 
+
+We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our support page or through UGAAM plugin review.
+
+
+== END USERS ROLE ==
+
+End users can be referred to those users who use this plugin on their WordPress website. You guys are awesome & very helpful. We would like to request you to contact us with suggestions, feedback & support in case you need it at some point. 
+
+If you find this plugin helpful to monetize your website feel help us by sharing this plugin in your social profiles. 
+
+
+== TRANSLATE TO YOUR LANGUAGE == 
+
+If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the translation page from this link.
+
+
+== IMPORTANT LINKS == 
+
+* Plugin page: [Click here](https://themebeez.com/plugin/universal-google-adsense-ads-manager)
+* Plugin documenation page: [Click here](https://themebeez.com/universal-google-adsense-ads-manager-documentation)
+* Plugin review/feedback: [Click here] (https://wordpress.org/pugins/)
+* Plugin support/bug report: [Click here] (https://themebeez.com/support/)
+
+
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
 
-An answer to that question.
+= Where can I insert Google domain verification code? =
 
-= What about foo bar? =
+To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager 
 
-Answer to foo bar dilemma.
+
+= How can I insert my Google Adsense advertisement code? =
+
+To insert your Google adsense code go to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager 
+
+
+= Can I use custom image banner ads? =
+
+Yes
+
+
+= Can I use other advertisement network ads? =
+
+Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc.
+
+
+= Do you provide free support? =
+
+Yes, we do. Kindly visit us at ( support page )[https://themebeez.com/support/] & ask for support. 
+
+
+= What are the upcoming features? =
+
+Google AMP support, GDPR support & many more...
+
+
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. UGAAM welcome page
+2. UGAAM at customizer
+3. UGAAM customizer script manager section
+4. UGAAM widget 
+
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= 1.0.0 =
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+* Initial release
 
-== Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
 
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
 
-== Arbitrary section ==
 
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
 
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
