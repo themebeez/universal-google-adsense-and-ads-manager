@@ -93,9 +93,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_text_field'
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'sanitize_text_field',
 				'default'				=> $defaults[$id],
-				'capability'        => 'edit_theme_options',
 			) 
 		);	
 
@@ -133,9 +133,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_textarea_fi
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'universal_google_adsense_and_ads_manager_sanitize_script',
 				'default'				=> $defaults[$id],
-				'capability'        => 'edit_theme_options',
 			) 
 		);	
 
@@ -182,9 +182,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_number_fiel
 
 			$wp_customize->add_setting( $field_id, 
 				array(
+				'type' => 'option',
 				'default' => $defaults[$id],
 				'sanitize_callback' => 'universal_google_adsense_and_ads_manager_sanitize_range',
-				'capability'        => 'edit_theme_options',
 				)
 			);	
 
@@ -192,9 +192,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_number_fiel
 
 			$wp_customize->add_setting( $field_id, 
 				array(
+					'type' => 'option',
 					'default' => $defaults[$id],
 					'sanitize_callback' => 'universal_google_adsense_and_ads_manager_sanitize_number',
-					'capability'        => 'edit_theme_options',
 				) 
 			);	
 		}		
@@ -233,9 +233,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_url_field' 
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'esc_url_raw',
 				'default'				=> $defaults[$id],
-				'capability'        => 'edit_theme_options',
 			) 
 		);	
 
@@ -273,9 +273,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_toggle_fiel
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'wp_validate_boolean',
 				'default'				=> $defaults[$id],
-				'capability'        => 'edit_theme_options',
 			)
 		);
 
@@ -314,9 +314,9 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_select_fiel
 
 		$wp_customize->add_setting( $field_id,
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'universal_google_adsense_and_ads_manager_sanitize_select',
 				'default'				=> $defaults[$id],
-				'capability'        => 'edit_theme_options',
 			)
 		);
 
@@ -354,6 +354,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_image_field
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'esc_url_raw',
 				'default'				=> $defaults[$id],
 			)
@@ -393,6 +394,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_responsive_
 
 		$wp_customize->add_setting( $field_id, 
 			array(
+				'type' => 'option',
 				'sanitize_callback'		=> 'sanitize_text_field',
 				'default'				=> $defaults[$id],
 			)

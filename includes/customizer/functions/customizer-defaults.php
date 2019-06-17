@@ -29,10 +29,10 @@ if ( ! function_exists( 'universal_google_adsense_and_ads_manager_get_option' ) 
         }
 
         if ( null !== $default_value ) {
-            $value = get_theme_mod( $fullkey, $default_value );
+            $value = get_option( $fullkey, $default_value );
         }
         else {
-            $value = get_theme_mod( $fullkey );
+            $value = get_option( $fullkey );
         }
 
         return $value;

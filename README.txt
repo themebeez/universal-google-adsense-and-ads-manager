@@ -2,10 +2,10 @@
 Contributors: themebeez
 Donate link: https://themebeez.com/
 Tags: AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, adverts, advert, amazon, banner, banners, buysellads, clickbank, mgid, doubleclick
-Requires at least: 4.8
-Tested up to: 5.2
+Requires at least: 5.0
+Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,7 +173,13 @@ Google AMP support, GDPR support & many more...
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 - June 17, 2019 = 
+
+* Customizer options setting's type changed
+* Dashicon removed from ad's close button
+
+
+= 1.0.0 = June 17, 2019 =
 
 * Initial release
 
