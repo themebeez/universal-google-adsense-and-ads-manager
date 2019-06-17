@@ -28,7 +28,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_a
 		?>
 		<div class="ugaam-custom-ad">
       
-			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+			<button type="button" class="ugaam-ad-close-button">x</button>
 
 		<?php
 	}
@@ -52,7 +52,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_
 		?>
 		<div class="ugaam-adsense-ad">
 
-			<button type="button" class="ugaam-ad-close-button"><i class="dashicons dashicons-no-alt"></i></button>
+			<button type="button" class="ugaam-ad-close-button">x</button>
 
 		<?php
 	}
