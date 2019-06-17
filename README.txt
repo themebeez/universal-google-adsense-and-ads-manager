@@ -117,7 +117,7 @@ If you find this plugin helpful to monetize your website feel help us by sharing
 
 == TRANSLATE TO YOUR LANGUAGE == 
 
-If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the (translation page from this link)[https://translate.wordpress.org/projects/wp-plugins/universal-google-adsense-and-ads-manager/].
+If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the [translation page from this link](https://translate.wordpress.org/projects/wp-plugins/universal-google-adsense-and-ads-manager/).
 
 
 == IMPORTANT LINKS == 
