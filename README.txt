@@ -71,7 +71,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-        [ugaam_ad] <--- Your advertisement code goes here ---> [/ugaam_ad]
+        [ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
@@ -90,7 +90,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 ``
 
 
-== INSTALLATION ==
+**INSTALLATION**
 
 * Navigate to Dashboard > Appearance > Plugins 
 * Click on Add new button
@@ -103,9 +103,9 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 
-== ACTIVE DEVELOPMENT & SUPPORT == 
+**ACTIVE DEVELOPMENT & SUPPORT**
 
-We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our (support page)[https://themebeez.com/support/] or through UGAAM plugin review.
+We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our [support page](https://themebeez.com/support/) or through UGAAM plugin review.
 
 
 == END USERS ROLE ==
@@ -117,15 +117,15 @@ If you find this plugin helpful to monetize your website feel help us by sharing
 
 == TRANSLATE TO YOUR LANGUAGE == 
 
-If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the translation page from this link.
+If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the [translation page from this link](https://translate.wordpress.org/projects/wp-plugins/universal-google-adsense-and-ads-manager/).
 
 
 == IMPORTANT LINKS == 
 
 * Plugin page: [Click here](https://themebeez.com/plugins/universal-google-adsense-ads-manager)
 * Plugin documenation page: [Click here](https://themebeez.com/ugaam-documentation)
-* Plugin review/feedback: [Click here] (https://wordpress.org/pugins/)
-* Plugin support/bug report: [Click here] (https://themebeez.com/support/)
+* Plugin review/feedback: [Click here](https://wordpress.org/support/plugin/universal-google-adsense-and-ads-manager/reviews/)
+* Plugin support/bug report: [Click here](https://themebeez.com/support/)
 
 
 
@@ -154,7 +154,7 @@ Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc
 
 = Do you provide free support? =
 
-Yes, we do. Kindly visit us at ( support page )[https://themebeez.com/support/] & ask for support. 
+Yes, we do. Kindly visit us at [support page](https://themebeez.com/support/) & ask for support. 
 
 
 = What are the upcoming features? =
