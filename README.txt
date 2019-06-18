@@ -71,22 +71,22 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-        [ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
+  [ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
 
 
 ``
-        [ugaam_ad] 
-        <--- Your advertisement code goes here --->
-        <!-- ad -->
-        <--- The second advertisement code goes here --->
-        <!-- ad -->
-        <--- The third advertisement code goes here --->
-        <!-- ad -->
-        <--- The fourth advertisement code goes here --->  
-        [/ugaam_ad]
+[ugaam_ad] 
+  <--- Your advertisement code goes here --->
+  <!-- ad -->
+  <--- The second advertisement code goes here --->
+  <!-- ad -->
+  <--- The third advertisement code goes here --->
+  <!-- ad -->
+  <--- The fourth advertisement code goes here --->  
+  [/ugaam_ad]
 ``
 
 
@@ -123,7 +123,7 @@ If you love this plugin, We would like to welcome you to join your hands with us
 == IMPORTANT LINKS == 
 
 * Plugin page: [Click here](https://themebeez.com/plugins/universal-google-adsense-ads-manager)
-* Plugin documenation page: [Click here](https://themebeez.com/ugaam-documentation)
+* Plugin documenation page: [Click here](https://themebeez.com/ugaam-plugin-documentation)
 * Plugin review/feedback: [Click here](https://wordpress.org/support/plugin/universal-google-adsense-and-ads-manager/reviews/)
 * Plugin support/bug report: [Click here](https://themebeez.com/support/)
 
