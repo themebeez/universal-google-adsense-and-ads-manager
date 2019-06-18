@@ -2,10 +2,10 @@
 Contributors: themebeez
 Donate link: https://themebeez.com/
 Tags: AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, adverts, advert, amazon, banner, banners, buysellads, clickbank, mgid, doubleclick
-Requires at least: 4.8
-Tested up to: 5.2
+Requires at least: 5.0
+Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,7 +71,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-        [ugaam_ad] <--- Your advertisement code goes here ---> [/ugaam_ad]
+        [ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
@@ -90,7 +90,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 ``
 
 
-== INSTALLATION ==
+**INSTALLATION**
 
 * Navigate to Dashboard > Appearance > Plugins 
 * Click on Add new button
@@ -103,9 +103,9 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 
-== ACTIVE DEVELOPMENT & SUPPORT == 
+**ACTIVE DEVELOPMENT & SUPPORT**
 
-We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our (support page)[https://themebeez.com/support/] or through UGAAM plugin review.
+We are actively supporting UGAAM plugin. Please feel to let us know if you want to contribute to this project. As all free plugins are maintained as per users feedbacks, kindly feel free to report us if you find any bugs or issue.  You can reach us through our [support page](https://themebeez.com/support/) or through UGAAM plugin review.
 
 
 == END USERS ROLE ==
@@ -117,15 +117,15 @@ If you find this plugin helpful to monetize your website feel help us by sharing
 
 == TRANSLATE TO YOUR LANGUAGE == 
 
-If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the translation page from this link.
+If you love this plugin, We would like to welcome you to join your hands with us. Kindly feel free to translate this plugin in your local language. You can access the [translation page from this link](https://translate.wordpress.org/projects/wp-plugins/universal-google-adsense-and-ads-manager/).
 
 
 == IMPORTANT LINKS == 
 
 * Plugin page: [Click here](https://themebeez.com/plugins/universal-google-adsense-ads-manager)
 * Plugin documenation page: [Click here](https://themebeez.com/ugaam-documentation)
-* Plugin review/feedback: [Click here] (https://wordpress.org/pugins/)
-* Plugin support/bug report: [Click here] (https://themebeez.com/support/)
+* Plugin review/feedback: [Click here](https://wordpress.org/support/plugin/universal-google-adsense-and-ads-manager/reviews/)
+* Plugin support/bug report: [Click here](https://themebeez.com/support/)
 
 
 
@@ -154,7 +154,7 @@ Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc
 
 = Do you provide free support? =
 
-Yes, we do. Kindly visit us at ( support page )[https://themebeez.com/support/] & ask for support. 
+Yes, we do. Kindly visit us at [support page](https://themebeez.com/support/) & ask for support. 
 
 
 = What are the upcoming features? =
@@ -173,7 +173,13 @@ Google AMP support, GDPR support & many more...
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 - June 17, 2019 = 
+
+* Customizer options setting's type changed
+* Dashicon removed from ad's close button
+
+
+= 1.0.0 = June 17, 2019 =
 
 * Initial release
 
