@@ -1,12 +1,12 @@
 <?php
-// Silence is golden
+/**
+ * Collection of template hooks.
+ */
 
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_ad_template() {
-		?>
-		<div class="ugaam-ad-wrapper-outer <?php universal_google_adsense_and_ads_manager_ad_content_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
-		<?php
+		?><div class="ugaam-ad-wrapper-outer <?php universal_google_adsense_and_ads_manager_ad_content_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner"><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_ad', 'universal_google_adsense_and_ads_manager_before_ad_template', 10 );
@@ -14,9 +14,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_ad', 'universal_goo
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_ad_template() {
-		?>
-		</div></div></div>
-		<?php
+		?></div></div></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_ad', 'universal_google_adsense_and_ads_manager_after_ad_template', 10 );
@@ -25,12 +23,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_ad', 'universal_goog
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_custom_ad_template() {
-		?>
-		<div class="ugaam-custom-ad">
-      
-			<button type="button" class="ugaam-ad-close-button">x</button>
-
-		<?php
+		?><div class="ugaam-custom-ad"><button type="button" class="ugaam-ad-close-button">x</button><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_custom_ad', 'universal_google_adsense_and_ads_manager_before_custom_ad_template', 10 );
@@ -39,9 +32,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_custom_ad', 'univer
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_custom_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_custom_ad_template() {
-		?>
-		</div>
-		<?php
+		?></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_custom_ad', 'universal_google_adsense_and_ads_manager_after_custom_ad_template' );
@@ -49,12 +40,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_custom_ad', 'univers
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_template() {
-		?>
-		<div class="ugaam-adsense-ad">
-
-			<button type="button" class="ugaam-ad-close-button">x</button>
-
-		<?php
+		?><div class="ugaam-adsense-ad"><button type="button" class="ugaam-ad-close-button">x</button><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad', 'universal_google_adsense_and_ads_manager_before_adsense_ad_template', 10 );
@@ -63,9 +49,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad', 'unive
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_adsense_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_adsense_ad_template() {
-		?>
-		</div>
-		<?php
+		?></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad', 'universal_google_adsense_and_ads_manager_after_adsense_ad_template', 10 );
@@ -73,9 +57,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad', 'univer
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template() {
-		?>
-		<div class="ugaam-desktop-tablet-adsense-ad">
-		<?php
+		?><div class="ugaam-desktop-tablet-adsense-ad"><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet', 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template', 10 );
@@ -84,9 +66,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template() {
-		?>
-		</div>
-		<?php
+		?></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet', 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template', 10 );
@@ -96,9 +76,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_t
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template() {
-		?>
-		<div class="ugaam-mobile-adsense-ad">
-		<?php
+		?><div class="ugaam-mobile-adsense-ad"><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile', 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template', 10 );
@@ -107,9 +85,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile',
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template() {
-		?>
-		</div>
-		<?php
+		?></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile', 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template', 10 );
@@ -118,9 +94,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile', 
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_header_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_sticky_header_ad_template() {
-		?>
-		<div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
-		<?php
+		?><div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner"><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_sticky_header_ad', 'universal_google_adsense_and_ads_manager_before_sticky_header_ad_template', 10 );
@@ -129,9 +103,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_sticky_header_ad', 
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_sticky_header_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_sticky_header_ad_template() {
-		?>
-		</div></div></div>
-		<?php
+		?></div></div></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_sticky_header_ad', 'universal_google_adsense_and_ads_manager_after_sticky_header_ad_template', 10 );
@@ -140,11 +112,7 @@ add_action( 'universal_google_adsense_and_ads_manager_after_sticky_header_ad', '
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template() {
-		?>
-
-		<div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner">
-			
-		<?php
+		?><div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner"><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad', 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template', 10 );
@@ -153,9 +121,7 @@ add_action( 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad', 
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_after_sticky_footer_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_after_sticky_footer_ad_template() {
-		?>
-		</div></div></div>
-		<?php
+		?></div></div></div><?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_after_sticky_footer_ad', 'universal_google_adsense_and_ads_manager_after_sticky_footer_ad_template', 10 );
@@ -200,8 +166,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 			   	
 			   	if( !empty( $custom_ad_link ) ) {
 			        ?>
-		        	</a>
-		        	<?php
+		        	</a><?php
 		        }
 		        /**
 		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
@@ -299,8 +264,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 			   	if( !empty( $custom_ad_link ) ) {
 			        ?>
-		        	</a>
-		        	<?php
+		        	</a><?php
 		        }
 		        /**
 		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
@@ -377,6 +341,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 			if( $ad_type == 'custom_ad' ) {
 
 				$custom_ad_img = universal_google_adsense_and_ads_manager_get_option( 'post_page_custom_ad_image' );
+
 				$custom_ad_link = universal_google_adsense_and_ads_manager_get_option( 'post_page_custom_ad_link' );
 
 				/**
@@ -390,15 +355,17 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 			        ?>
 			        <a href="<?php echo esc_url( $custom_ad_link ); ?>"><?php
 			   	}
+
 			   	if( !empty( $custom_ad_img ) ) {
 			   		?>
 		        	<img src="<?php echo esc_url( $custom_ad_img ); ?>"><?php
-			   	}			   	
+			   	}	
+
 			   	if( !empty( $custom_ad_link ) ) {
 			        ?>
-		        	</a>
-		        	<?php
+		        	</a><?php
 		        }
+
 		        /**
 		        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
 		        *
@@ -408,6 +375,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 			} else {
 
 				$desktop_tablet_adsense = universal_google_adsense_and_ads_manager_get_option( 'post_page_ad_script_desk_n_tab' );
+
 				$mobile_adsense = universal_google_adsense_and_ads_manager_get_option( 'post_page_ad_script_mobile' );
 
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
@@ -437,7 +405,6 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
 					}
-
 					if( !empty( $mobile_adsense ) ) {
 
 						/**
@@ -466,7 +433,6 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 				}
 			}
 		}
-
 		/**
         * Hook - universal_google_adsense_and_ads_manager_after_ad.
         *
@@ -515,8 +481,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 		   	
 		   	if( !empty( $custom_ad_link ) ) {
 		        ?>
-	        	</a>
-	        	<?php
+	        	</a><?php
 	        }
 	        /**
 	        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.
@@ -633,8 +598,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 		   	
 		   	if( !empty( $custom_ad_link ) ) {
 		        ?>
-	        	</a>
-	        	<?php
+	        	</a><?php
 	        }
 	        /**
 	        * Hook - universal_google_adsense_and_ads_manager_after_custom_ad.

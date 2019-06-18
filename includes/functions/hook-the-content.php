@@ -36,7 +36,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 
 					$content = $ad_content . $content;
 
-					return wpautop( $content );
+					return wpautop( $content, false );
 				}
 
 				if( $ad_position == 'after_post_content' ) {
@@ -56,7 +56,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 
 					$content = $content . $ad_content; 
 
-					return wpautop( $content );
+					return wpautop( $content, false );
 				}			
 
 			} else {
@@ -103,7 +103,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 					$count++;
 				}
 
-				return wpautop( $fullcontent );
+				return wpautop( $fullcontent, false );
 			}
 		}
 	}

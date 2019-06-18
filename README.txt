@@ -5,7 +5,7 @@ Tags: AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Bes
 Requires at least: 5.0
 Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,11 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.0.2 - June 18, 2019 =
+
+* Issues on post and page single fixed
+* Other minor fixes
 
 = 1.0.1 - June 17, 2019 = 
 
