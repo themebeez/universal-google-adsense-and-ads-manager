@@ -8,9 +8,13 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Content' ) ) {
 
 		public function the_content( $content ) {
 
+			global $post;
+
 			$enable_ad_in_post_page = universal_google_adsense_and_ads_manager_get_option( 'enable_ad_in_post_page' );
 
-			if( ! is_singular() || $enable_ad_in_post_page == false ) {
+			$disable_ad_content = get_post_meta( $post->ID, 'ugaam-disable-ad-content', true );
+
+			if( ! is_singular() || $enable_ad_in_post_page == false || $disable_ad_content == 1 ) {
 
 				return $content;
 			}
