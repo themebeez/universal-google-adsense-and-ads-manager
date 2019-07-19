@@ -22,35 +22,50 @@
 	max-height: auto;
 }
 
-.ugaam-custom-ad,
-.ugaam-adsense-ad {
+.ugaam-ad-wrapper-inner {
 
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.ugaam-custom-ad,
+.ugaam-adsense-ad,
+.ugaam-ad-content {
+	
 	position: relative;
-	display:inline-block;
+	width: 100%;
+	min-width: 1px;
+    max-width: 100%;
+    height: 100%;
+    min-height: 1px;
 }
 
 
 // advertisement aligment 
 
 
-.ugaam-left-align {
+.ugaam-left-align .ugaam-ad-wrapper-inner {
 
-	text-align: left;
+	justify-content: flex-start;
+	text-align:left;
 }
 
-.ugaam-right-align {
+.ugaam-right-align .ugaam-ad-wrapper-inner {
 
+	justify-content: flex-end;
 	text-align:right;
 } 
 
-.ugaam-center-align {
+.ugaam-center-align .ugaam-ad-wrapper-inner {
 
+	justify-content: center;
 	text-align:center;
 }
 
 
 // sticky ads
-
 
 [class*="ugaam-sticky-"] {
 
@@ -88,12 +103,13 @@ button.ugaam-ad-close-button {
 
 	display:none;
 	position: absolute;
+	z-index: 1000001;
     left: auto;
-    right: -24px;
-    top: -1px;
+    right: 0;
+    top: 0;
     bottom: auto;
-    color:#555555;
-    background:#ffffff;
+    color: #ffffff;
+    background: #ed1c24;
     border:none;
     height:25px;
     width: 25px;
@@ -110,14 +126,6 @@ button.ugaam-ad-close-button {
     border-radius:0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-
-button.ugaam-ad-close-button i {
-
-	height:auto;
-	width:auto;
-	font-size: 12px;
-	line-height: unset;
 }
 
 [class*="ugaam-sticky-"] button.ugaam-ad-close-button  {

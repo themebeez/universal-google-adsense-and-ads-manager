@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: themebeez
 Donate link: https://themebeez.com/
-Tags: AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, adverts, advert, amazon, banner, banners, buysellads, clickbank, mgid, doubleclick
+Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
 Requires at least: 5.0
 Tested up to: 5.2.2
 Requires PHP: 5.6
@@ -71,22 +71,22 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-  [ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
+  		[ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
 
 
 ``
-[ugaam_ad] 
-  <--- Your advertisement code goes here --->
-  <!-- ad -->
-  <--- The second advertisement code goes here --->
-  <!-- ad -->
-  <--- The third advertisement code goes here --->
-  <!-- ad -->
-  <--- The fourth advertisement code goes here --->  
-  [/ugaam_ad]
+		[ugaam_ad] 
+		  <--- Your advertisement code goes here --->
+		  <!-- ad -->
+		  <--- The second advertisement code goes here --->
+		  <!-- ad -->
+		  <--- The third advertisement code goes here --->
+		  <!-- ad -->
+		  <--- The fourth advertisement code goes here --->  
+		  [/ugaam_ad]
 ``
 
 
