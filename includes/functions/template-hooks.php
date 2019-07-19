@@ -181,6 +181,8 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
+					$mobileDetect = new UGAAM_Mobile_Detect();
+
 					/**
 			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
@@ -190,40 +192,46 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
-						/**
-				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
+						if( ! $mobileDetect->isMobile() ) {
 
-				        echo stripslashes( $desktop_tablet_adsense );
+							/**
+					        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        /**
-				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					        echo stripslashes( $desktop_tablet_adsense );
+
+					        /**
+					        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					    }
 					}
 
 					if( !empty( $mobile_adsense ) ) {
 
-						/**
-				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
+						if( $mobileDetect->isMobile() ) {
 
-				        echo stripslashes( $mobile_adsense );
+							/**
+					        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        /**
-				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					        echo stripslashes( $mobile_adsense );
+
+					        /**
+					        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					    }
 					}
 
 					/**
@@ -279,6 +287,8 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
+					$mobileDetect = new UGAAM_Mobile_Detect();
+
 					/**
 			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
@@ -288,40 +298,46 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
-						/**
-				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
+						if( ! $mobileDetect->isMobile() ) {
 
-				        echo stripslashes( $desktop_tablet_adsense );
+							/**
+					        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        /**
-				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					        echo stripslashes( $desktop_tablet_adsense );
+
+					        /**
+					        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					    }
 					}
 
 					if( !empty( $mobile_adsense ) ) {
 
-						/**
-				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
+						if( $mobileDetect->isMobile() ) {
 
-				        echo stripslashes( $mobile_adsense );
+							/**
+					        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_mobile_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_mobile' );
 
-				        /**
-				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					        echo stripslashes( $mobile_adsense );
+
+					        /**
+					        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_mobile.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
+					    }
 					}
 
 					/**
@@ -380,6 +396,8 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 				if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
+					$mobileDetect = new UGAAM_Mobile_Detect();
+
 					/**
 			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
 			        *
@@ -389,21 +407,24 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_temp
 
 					if( !empty( $desktop_tablet_adsense ) ) {
 
-						/**
-				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
+						if( ! $mobileDetect->isMobile() ) {
 
-				        echo stripslashes( $desktop_tablet_adsense );
+							/**
+					        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet' );
 
-				        /**
-				        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
-				        *
-				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
-				        */
-				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					        echo stripslashes( $desktop_tablet_adsense );
+
+					        /**
+					        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet.
+					        *
+					        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
+					        */
+					        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
+					    }
 					}
 					if( !empty( $mobile_adsense ) ) {
 
@@ -496,14 +517,18 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 
 			if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
+				$mobileDetect = new UGAAM_Mobile_Detect();
 
-					if( !empty( $desktop_tablet_adsense ) ) {
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
+
+				if( !empty( $desktop_tablet_adsense ) ) {
+
+					if( ! $mobileDetect->isMobile() ) {
 
 						/**
 				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
@@ -520,9 +545,12 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
-					}
+				    }
+				}
 
-					if( !empty( $mobile_adsense ) ) {
+				if( !empty( $mobile_adsense ) ) {
+
+					if( $mobileDetect->isMobile() ) {
 
 						/**
 				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
@@ -539,15 +567,16 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_a
 				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
-					}
-
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
+				    }
 				}
+
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
+			}
 		}
 
 		/**
@@ -613,14 +642,18 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 
 			if( !empty( $desktop_tablet_adsense ) || !empty( $mobile_adsense ) ) {
 
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
+				$mobileDetect = new UGAAM_Mobile_Detect();
 
-					if( !empty( $desktop_tablet_adsense ) ) {
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_before_adsense_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad' );
+
+				if( !empty( $desktop_tablet_adsense ) ) {
+
+					if( ! $mobileDetect->isMobile() ) {
 
 						/**
 				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_desktop_tablet.
@@ -637,9 +670,12 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet_template - 10
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_desktop_tablet' );
-					}
+				    }
+				}
 
-					if( !empty( $mobile_adsense ) ) {
+				if( !empty( $mobile_adsense ) ) {
+
+					if( $mobileDetect->isMobile() ) {
 
 						/**
 				        * Hook - universal_google_adsense_and_ads_manager_before_adsense_ad_mobile.
@@ -656,15 +692,16 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_a
 				        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_mobile_template - 10
 				        */
 				        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile' );
-					}
-
-					/**
-			        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
-			        *
-			        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
-			        */
-			        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
+				    }
 				}
+
+				/**
+		        * Hook - universal_google_adsense_and_ads_manager_after_adsense_ad.
+		        *
+		        * @hooked universal_google_adsense_and_ads_manager_after_adsense_ad_template - 10
+		        */
+		        do_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad' );
+			}
 		}
 
 		/**

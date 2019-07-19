@@ -73,6 +73,7 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 			$this->sticky_ad_init();
 			$this->customize_init();
 			$this->shortcode_init();
+			$this->post_custom_field_init();
 		}
 
 		/**
@@ -140,6 +141,17 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 			 * The class responsible for defining all actions for theme customizer.
 			 */
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/customizer/class-ugaam-customizer.php';
+
+			/**
+			 * The class responsible for defining post custom field.
+			 */
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom-fields/class-ugaam-post-field.php';
+
+			/**
+			 * The class responsible for detecting device.
+			 */
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/library/class-ugaam-mobile-detect.php';
+
 
 			$this->loader = new Universal_Google_AdSense_And_Ads_Manager_Loader();
 		}
@@ -255,6 +267,17 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 		public function shortcode_init() {
 
 			$plugin_shortcode = new Universal_Google_AdSense_And_Ad_Manager_Ad_Shortcode();
+		}
+
+		/**
+		 * Register all of the shortcodes.
+		 *
+		 * @since 	 1.0.3	
+		 * @access   public
+		 */
+		public function post_custom_field_init() {
+
+			$post_custom_field = new UGAAM_Post_Meta();
 		}
 
 		/**

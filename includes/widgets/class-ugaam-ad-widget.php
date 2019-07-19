@@ -91,23 +91,31 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Advertisement_Widg
                         }
 
                         if( $ad_type == 'adsense_ad' ) {
+
+                            $mobileDetect = new UGAAM_Mobile_Detect();
                             ?>
                             <div class="ugaam-adsense-ad">
                                 <?php
                                 if( !empty( $desktop_tablet_script ) ) {
-                                    ?>
-                                    <div class="ugaam-desktop-tablet-adsense-ad">
-                                        <?php echo stripslashes( $desktop_tablet_script ); ?>
-                                    </div>
-                                    <?php
+
+                                    if( ! $mobileDetect->isMobile() ) {
+                                        ?>
+                                        <div class="ugaam-desktop-tablet-adsense-ad">
+                                            <?php echo stripslashes( $desktop_tablet_script ); ?>
+                                        </div>
+                                        <?php
+                                    }
                                 }
 
                                 if( !empty( $mobile_script ) ) {
-                                    ?>
-                                    <div class="ugaam-mobile-adsense-ad">
-                                        <?php echo stripslashes( $mobile_script ); ?>
-                                    </div>
-                                    <?php
+
+                                    if( $mobileDetect->isMobile() ) {
+                                        ?>
+                                        <div class="ugaam-mobile-adsense-ad">
+                                            <?php echo stripslashes( $mobile_script ); ?>
+                                        </div>
+                                        <?php
+                                    }
                                 }
                                 ?>
                             </div>
