@@ -321,16 +321,36 @@
 
 
 
+/* Aside */
+
+aside.ug-aside .section-title {
+
+	font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+aside.ug-aside .ug-aside-widget {
+
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+aside.ug-aside .ug-aside-widget:last-child {
+
+	margin-bottom: 0;
+}
+
 /* video */
 
 
-.ug-video {
+.ug-video .ug-video-section-inner {
 
 	position: relative;
 	padding-bottom: 56.56%;
 }
 
-.ug-video iframe {
+.ug-video .ug-video-section-inner iframe {
 
 	position: absolute;
 	left: 0;
@@ -345,18 +365,6 @@
 
 /* buttons */
 
-
-.ug-buttons {
-
-	padding: 30px;
-}
-
-.ug-buttons h2 {
-
-	font-size: 18px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
 
 .ug-buttons ul {
 
