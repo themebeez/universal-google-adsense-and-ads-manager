@@ -121,14 +121,23 @@
                 </div><!-- // ug-col -->
                 <div class="ug-col sidebar right">
                     <aside class="ug-aside">
-                        <div class="ug-buttons ug-white-bg ug-section-shadow">
+                        <div class="ug-video ug-white-bg ug-section-shadow ug-aside-widget">
+                              <div class="ugaam-section-title">
+                                <h2 class="section-title"><?php _e( 'Ugaam Walk-through Video ...', 'universal-google-adsense-and-ads-manager' ); ?></h2>       
+                            </div>
+                            <div class="ug-video-section-inner">
+                                <iframe src="https://www.youtube.com/embed/tkQ583b22BA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div><!-- // ug-video-section-inner -->
+                        </div><!-- // ug-video -->
+
+                        <div class="ug-buttons ug-white-bg ug-section-shadow ug-aside-widget">
                         <div class="ugaam-section-title">
-                            <h2><?php _e( 'Quick Links ...', 'universal-google-adsense-and-ads-manager' ); ?></h2>                                
+                            <h2 class="section-title"><?php _e( 'Quick Links ...', 'universal-google-adsense-and-ads-manager' ); ?></h2>                                
                         </div>
                             <ul>
                                 <li><a href="<?php echo esc_url( wp_customize_url() ); ?>" target="_blank"><?php _e( 'Insert Scripts', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
                                 <li><a href="<?php echo esc_url( wp_customize_url() ); ?>" target="_blank"><?php _e( 'Insert Ads', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
-                                <li><a href="https://themebeez.com/ugaam-documentation/" target="_blank"><?php _e( 'UGAAM Documenation', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
+                                <li><a href="https://themebeez.com/docs/ugaam-plugin-documentation/" target="_blank"><?php _e( 'UGAAM Documenation', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
                                 <li><a href="https://themebeez.com/support/" target="_blank"><?php _e( 'Get Support', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
                                 <li><a href="https://wordpress.org/plugins/universal-google-adsense-and-ads-manager/#reviews" target="_blank"><?php _e( 'Rate UGAAM', 'universal-google-adsense-and-ads-manager' ); ?></a></li>
                             </ul>
