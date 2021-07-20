@@ -3,9 +3,9 @@ Contributors: themebeez
 Donate link: https://themebeez.com/
 Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
 Requires at least: 5.0
-Tested up to: 5.5
+Tested up to: 5.8
 Requires PHP: 7.0.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,37 +173,40 @@ Google AMP support, GDPR support & many more...
 
 == Changelog ==
 
-= 1.0.6 - August 13, 2020 = 
+= 1.0.7 - July 20, 2021 = 
+* Updated: Style and scripts enqeueue
+* Removed: Unwanted files
 
+
+= 1.0.6 - August 13, 2020 = 
 * Testing: Tested on WordPress version 5.5
 
-= 1.0.5 - July 28, 2019 = 
 
+= 1.0.5 - July 28, 2019 = 
 * Added: Video at dashboard 
 * Fixed: Documenation link at UGAAM dashboard welcome page
 
-= 1.0.4 - July 21, 2019 = 
 
+= 1.0.4 - July 21, 2019 = 
 * Fixed: Fatal error
 
-= 1.0.3 - July 19, 2019 =
 
+= 1.0.3 - July 19, 2019 =
 * Custom field added to hide ad content in posts and pages
 * Mobile detector added
 
-= 1.0.2 - June 18, 2019 =
 
+= 1.0.2 - June 18, 2019 =
 * Issues on post and page single fixed
 * Other minor fixes
 
-= 1.0.1 - June 17, 2019 = 
 
+= 1.0.1 - June 17, 2019 = 
 * Customizer options setting's type changed
 * Dashicon removed from ad's close button
 
 
 = 1.0.0 = June 17, 2019 =
-
 * Initial release
 
 
