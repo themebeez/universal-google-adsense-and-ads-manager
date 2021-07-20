@@ -72,7 +72,12 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ugaam-admin.css', array(), $this->version, 'all' );
+		global $pagenow;
+
+		if ( 'admin.php' == $pagenow && ( isset( $_GET['page'] ) && 'ugaam' == $_GET['page'] ) ) {
+
+			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ugaam-admin.css', array(), $this->version, 'all' );
+		}
 	}
 
 	/**
@@ -93,12 +98,12 @@ class Universal_Google_AdSense_And_Ads_Manager_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
+		global $pagenow;
 
-		wp_enqueue_script( 'media-upload' );
+		if ( 'admin.php' == $pagenow && ( isset( $_GET['page'] ) && 'ugaam' == $_GET['page'] ) ) {
 
-		wp_enqueue_media();
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ugaam-admin.js', array( 'jquery' ), $this->version, false );
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ugaam-admin.js', array( 'jquery' ), $this->version, false );
+		}
 	}
 
 	/**
