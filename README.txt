@@ -2,10 +2,10 @@
 Contributors: themebeez
 Donate link: https://themebeez.com/
 Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
-Requires at least: 5.0
-Tested up to: 5.9
+Requires at least: 5.0.0
+Tested up to: 6.0.2
 Requires PHP: 7.0.0
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,11 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.0.9 - 31 August, 2022 =
+
+- Tested: WordPress version 6.0.2
+
 
 = 1.0.8 - 23 January, 2022 =
 
