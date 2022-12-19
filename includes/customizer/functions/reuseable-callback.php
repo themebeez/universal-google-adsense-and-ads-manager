@@ -279,7 +279,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_toggle_fiel
 			)
 		);
 
-		$wp_customize->add_control( new Easy_Adsense_Ads_Manager_Customizer_Toggle_Control( $wp_customize, $field_id, $control_args ) );
+		$wp_customize->add_control( new UGAAM_Customizer_Toggle_Control( $wp_customize, $field_id, $control_args ) );
 	}
 }
 
@@ -400,6 +400,6 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_add_responsive_
 			)
 		);
 
-		$wp_customize->add_control( new Easy_Adsense_Ads_Manager_Responsive_Dimension_Control( $wp_customize, $field_id, $control_args ) );
+		$wp_customize->add_control( new UGAAM_Customizer_Responsive_Dimension_Control( $wp_customize, $field_id, $control_args ) );
 	}
 }

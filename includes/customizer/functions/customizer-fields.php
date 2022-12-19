@@ -39,7 +39,7 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_panel_declarati
 		$panels = array(
 			array(
 				'id' => 'ugaam',
-				'title' => esc_html__( 'Universal Google AdSense &amp; Ad Manager', 'universal-google-adsense-and-ads-manager' ),
+				'title' => esc_html__( 'Universal Google AdSense &amp; Ads Manager', 'universal-google-adsense-and-ads-manager' ),
 				'description' => '',
 				'priority' => 300,
 			),

@@ -4,7 +4,7 @@
 	/**
 	 * Buttonset control
 	 */
-	class Easy_Adsense_Ads_Manager_Responsive_Dimension_Control extends WP_Customize_Control {
+	class UGAAM_Customizer_Responsive_Dimension_Control extends WP_Customize_Control {
 
 		/**
 		 * The control type.

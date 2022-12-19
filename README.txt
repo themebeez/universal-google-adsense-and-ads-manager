@@ -3,17 +3,17 @@ Contributors: themebeez
 Donate link: https://themebeez.com/
 Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
 Requires at least: 5.0.0
-Tested up to: 6.0.2
+Tested up to: 6.1.1
 Requires PHP: 7.0.0
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Universal Google Adsense and Ads manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. 
+Universal Google AdSense and Ads Manager is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. 
 
 == Description ==
 
-[Universal Google Adsense and Ads manager](https://themebeez.com/plugins/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google Adsense and Ads manager ( UGAAM ) allows WordPress users to monetise your website easily.
+[Universal Google AdSense and Ads Manager](https://themebeez.com/plugins/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google AdSense and Ads Manager (UGAAM) allows WordPress users to monetise your website easily.
 
 UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: MGID, buy sell ads, Bidvertiser, affiliates ads etc ).
 
@@ -172,6 +172,11 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.1.0 - 19 December, 2022 =
+
+- Added: UDP agent.
+- Updated: Customize control class names, and plugin name.
 
 = 1.0.9 - 31 August, 2022 =
 

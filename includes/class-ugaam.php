@@ -152,6 +152,11 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager' ) ) {
 			 */
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/library/class-ugaam-mobile-detect.php';
 
+			/**
+			 * Load UDP agent class.
+			 */
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/udp/init.php';
+
 
 			$this->loader = new Universal_Google_AdSense_And_Ads_Manager_Loader();
 		}
