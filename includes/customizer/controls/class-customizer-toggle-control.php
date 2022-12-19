@@ -3,7 +3,7 @@
  * Toggle Custom Control
  */
 
-class Easy_Adsense_Ads_Manager_Customizer_Toggle_Control extends WP_Customize_Control {
+class UGAAM_Customizer_Toggle_Control extends WP_Customize_Control {
 
 	public $type = 'flat'; // light, iso, flat
 
