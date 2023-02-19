@@ -173,7 +173,7 @@ Google AMP support, GDPR support & many more...
 
 == Changelog ==
 
-= 1.1.0 - 19 December, 2022 =
+= 1.1.0 - 19 February, 2023 =
 
 - Added: UDP agent.
 - Updated: Customize control class names, and plugin name.
