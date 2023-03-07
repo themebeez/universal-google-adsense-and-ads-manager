@@ -1,9 +1,15 @@
 <?php
 /**
+ * Universal Google AdSense and Ads Manager
+ *
+ * @link              https://themebeez.com
+ * @since             1.0.0
+ * @package           Universal_Google_AdSense_And_Ads_Manager
+ *
  * Plugin Name:       Universal Google AdSense and Ads Manager
  * Plugin URI:        https://themebeez.com/universal-google-adsense-ads-manager
  * Description:       Universal Google AdSense and Ads Manager is a simple, and easy to use Google AdSense and custom advertisement manager for your WordPress websites.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            themebeez
  * Author URI:        https://themebeez.com
  * License:           GPL-2.0+
@@ -22,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'UNIVERSAL_GOOGLE_ADSENSE_AND_ADS_MANAGER_VERSION', '1.1.1' );
+define( 'UNIVERSAL_GOOGLE_ADSENSE_AND_ADS_MANAGER_VERSION', '1.1.2' );
 
 /**
  * The code that runs during plugin activation.
