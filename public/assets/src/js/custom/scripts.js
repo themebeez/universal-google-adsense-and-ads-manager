@@ -90,8 +90,11 @@ UGAAM.helpers = {
         // Set cookie value.
         this.stickyadCookieVal = action || 'false';
 
+        // expiry
+        const expiry = 6 * 60 * 60 * 1000; // 6 hrs.
+
         // Set cookie.
-        document.cookie = `${this.cookieName}=${this.cookieValue}; path=/; max-age=2.16e+7;` // 6 hrs.
+        document.cookie = `${this.cookieName}=${this.cookieValue}; path=/; max-age=${expiry};`;
     },
 
     /**
