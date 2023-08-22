@@ -83,13 +83,13 @@
 	max-width: 728px;
 }
 
-.ugaam-sticky-header-ad-wrapper {
+.is-sticky-header-ad-wrapper {
 	
 	top:0;
 	bottom:auto;
 }
 
-.ugaam-sticky-footer-ad-wrapper {
+.is-sticky-footer-ad-wrapper {
 
 	top:auto;
 	bottom:0;
@@ -172,7 +172,7 @@ button.ugaam-ad-close-button {
 
 // button sticky header ads 
 
-.ugaam-ad-wrapper-outer[class*="ugaam-sticky-"].ugaam-sticky-header-ad button.ugaam-ad-close-button {
+.ugaam-ad-wrapper-outer[class*="ugaam-sticky-"].is-sticky-header-ad button.ugaam-ad-close-button {
 
 	top:auto;
 	bottom: -15px;

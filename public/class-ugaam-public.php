@@ -49,7 +49,7 @@ class Universal_Google_AdSense_And_Ads_Manager_Public {
 	 */
 	public function enqueue_styles() {
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/dist/css/ugaam-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/build/css/ugaam-public.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -59,6 +59,6 @@ class Universal_Google_AdSense_And_Ads_Manager_Public {
 	 */
 	public function enqueue_scripts() {
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/dist/js/ugaam-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/build/js/ugaam-public.min.js', array(), $this->version, true );
 	}
 }

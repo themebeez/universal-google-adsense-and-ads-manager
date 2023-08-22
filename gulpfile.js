@@ -13,6 +13,7 @@ const rename = require('gulp-rename');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass')(require('sass'));
+const babel = require('gulp-babel');
 
 // npm install gulp@4.0.2 gulp-shell gulp-sourcemaps gulp-sass sass gulp-concat gulp-uglify gulp-postcss autoprefixer cssnano gulp-notify gulp-plumber gulp-rtlcss gulp-rename gulp-zip --save-dev
 
@@ -120,6 +121,9 @@ const source__files__folders__to__compress = {
 
 gulp.task('scriptsTask', function () {
     return gulp.src(scriptpath.script_src)
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat(output_js_file_name))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())

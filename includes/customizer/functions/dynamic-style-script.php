@@ -142,19 +142,19 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 					if( !empty( $header_ad_margin ) ) {
 						?>
 						@media( min-width: 992px ) {
-							.ugaam-sticky-header-ad-wrapper {
+							.is-sticky-header-ad-wrapper {
 								margin: <?php echo esc_attr( $header_ad_margin[0] ); ?>px <?php echo esc_attr( $header_ad_margin[1] ); ?>px <?php echo esc_attr( $header_ad_margin[2] ); ?>px <?php echo esc_attr( $header_ad_margin[3] ); ?>px;
 							}
 						}
 
 						@media( max-width: 991.98px ) {
-							.ugaam-sticky-header-ad-wrapper {
+							.is-sticky-header-ad-wrapper {
 								margin: <?php echo esc_attr( $header_ad_margin[4] ); ?>px <?php echo esc_attr( $header_ad_margin[5] ); ?>px <?php echo esc_attr( $header_ad_margin[6] ); ?>px <?php echo esc_attr( $header_ad_margin[7] ); ?>px;
 							}
 						}
 
 						@media( max-width: 767.98px ) {
-							.ugaam-sticky-header-ad-wrapper {
+							.is-sticky-header-ad-wrapper {
 								margin: <?php echo esc_attr( $header_ad_margin[8] ); ?>px <?php echo esc_attr( $header_ad_margin[9] ); ?>px <?php echo esc_attr( $header_ad_margin[10] ); ?>px <?php echo esc_attr( $header_ad_margin[11] ); ?>px;
 							}
 						}
@@ -178,19 +178,19 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 					if( !empty( $footer_ad_margin ) ) {
 						?>
 						@media( min-width: 992px ) {
-							.ugaam-sticky-footer-ad-wrapper {
+							.is-sticky-footer-ad-wrapper {
 								margin: <?php echo esc_attr( $footer_ad_margin[0] ); ?>px <?php echo esc_attr( $footer_ad_margin[1] ); ?>px <?php echo esc_attr( $footer_ad_margin[2] ); ?>px <?php echo esc_attr( $footer_ad_margin[3] ); ?>px;
 							}
 						}
 
 						@media( max-width: 991.98px ) {
-							.ugaam-sticky-footer-ad-wrapper {
+							.is-sticky-footer-ad-wrapper {
 								margin: <?php echo esc_attr( $footer_ad_margin[4] ); ?>px <?php echo esc_attr( $footer_ad_margin[5] ); ?>px <?php echo esc_attr( $footer_ad_margin[6] ); ?>px <?php echo esc_attr( $footer_ad_margin[7] ); ?>px;
 							}
 						}		
 
 						@media( max-width: 767.98px ) {
-							.ugaam-sticky-footer-ad-wrapper {
+							.is-sticky-footer-ad-wrapper {
 								margin: <?php echo esc_attr( $footer_ad_margin[8] ); ?>px <?php echo esc_attr( $footer_ad_margin[9] ); ?>px <?php echo esc_attr( $footer_ad_margin[10] ); ?>px <?php echo esc_attr( $footer_ad_margin[11] ); ?>px;
 							}
 						}			

@@ -19,17 +19,17 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 			if( $ad_alignment == 'left' || $ad_alignment == 'default' ) {
 
-				$wrapper_class .= ' ugaam-left-align';
+				$wrapper_class .= ' is-left-align';
 			}
 
 			if( $ad_alignment == 'right' ) {
 
-				$wrapper_class .= ' ugaam-right-align';
+				$wrapper_class .= ' is-right-align';
 			}
 
 			if( $ad_alignment == 'center' ) {
 
-				$wrapper_class .= ' ugaam-center-align';
+				$wrapper_class .= ' is-center-align';
 			}
 
 			$enable_custom_css = universal_google_adsense_and_ads_manager_get_option( 'home_enable_custom_css' );
@@ -57,17 +57,17 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 			if( $ad_alignment == 'left' || $ad_alignment == 'default' ) {
 
-				$wrapper_class .= ' ugaam-left-align';
+				$wrapper_class .= ' is-left-align';
 			}
 
 			if( $ad_alignment == 'right' ) {
 
-				$wrapper_class .= ' ugaam-right-align';
+				$wrapper_class .= ' is-right-align';
 			}
 
 			if( $ad_alignment == 'center' ) {
 
-				$wrapper_class .= ' ugaam-center-align';
+				$wrapper_class .= ' is-center-align';
 			}
 
 			$enable_custom_css = universal_google_adsense_and_ads_manager_get_option( 'archive_enable_custom_css' );
@@ -95,17 +95,17 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_ad_content_wrap
 
 			if( $ad_alignment == 'left' || $ad_alignment == 'default' ) {
 
-				$wrapper_class .= ' ugaam-left-align';
+				$wrapper_class .= ' is-left-align';
 			}
 
 			if( $ad_alignment == 'right' ) {
 
-				$wrapper_class .= ' ugaam-right-align';
+				$wrapper_class .= ' is-right-align';
 			}
 
 			if( $ad_alignment == 'center' ) {
 
-				$wrapper_class .= ' ugaam-center-align';
+				$wrapper_class .= ' is-center-align';
 			}
 
 			$enable_custom_css = universal_google_adsense_and_ads_manager_get_option( 'post_page_enable_custom_css' );
@@ -132,23 +132,23 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_header_w
 
 	function universal_google_adsense_and_ads_manager_sticky_header_wrapper_class() {
 
-		$wrapper_class = 'ugaam-sticky-header-ad-wrapper';
+		$wrapper_class = 'is-sticky-header-ad-wrapper';
 
 		$ad_alignment = universal_google_adsense_and_ads_manager_get_option( 'ad_alignment_in_header' );
 
 		if( $ad_alignment == 'left' || $ad_alignment == 'default' ) {
 
-			$wrapper_class .= ' ugaam-left-align';
+			$wrapper_class .= ' is-left-align';
 		}
 
 		if( $ad_alignment == 'right' ) {
 
-			$wrapper_class .= ' ugaam-right-align';
+			$wrapper_class .= ' is-right-align';
 		}
 
 		if( $ad_alignment == 'center' ) {
 
-			$wrapper_class .= ' ugaam-center-align';
+			$wrapper_class .= ' is-center-align';
 		}
 
 		$enable_custom_css = universal_google_adsense_and_ads_manager_get_option( 'header_enable_custom_css' );
@@ -174,23 +174,23 @@ if( ! function_exists( 'universal_google_adsense_and_ads_manager_sticky_footer_w
 
 	function universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class() {
 
-		$wrapper_class = 'ugaam-sticky-footer-ad-wrapper';
+		$wrapper_class = 'is-sticky-footer-ad-wrapper';
 
 		$ad_alignment = universal_google_adsense_and_ads_manager_get_option( 'ad_alignment_in_footer' );
 
 		if( $ad_alignment == 'left' || $ad_alignment == 'default' ) {
 
-			$wrapper_class .= ' ugaam-left-align';
+			$wrapper_class .= ' is-left-align';
 		}
 
 		if( $ad_alignment == 'right' ) {
 
-			$wrapper_class .= ' ugaam-right-align';
+			$wrapper_class .= ' is-right-align';
 		}
 
 		if( $ad_alignment == 'center' ) {
 
-			$wrapper_class .= ' ugaam-center-align';
+			$wrapper_class .= ' is-center-align';
 		}
 
 		$enable_custom_css = universal_google_adsense_and_ads_manager_get_option( 'footer_enable_custom_css' );

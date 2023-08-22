@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/themebeez/universal-google-adsense-and-ads-manager#readme",
   "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
     "autoprefixer": "^10.4.15",
     "cssnano": "^6.0.1",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",

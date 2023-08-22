@@ -1,0 +1,131 @@
+.ugaam-ad-wrapper-outer {
+
+    &.ugaam-sticky-ad {
+
+        display: flex;
+        position: fixed;
+        height: auto;
+        width: max-content;
+        max-width: 100%;
+        z-index: 10000000000000;
+        @include transition_delay( 0.8s, ease, all );
+
+        :is(a, button) {
+
+            &.ugaam-ad-close-button {
+
+                display: inline-flex;
+                @include visibility( visible );
+            }
+        }
+    }
+
+    &.is-sticky-header-ad {
+
+        top: 0;
+        bottom: auto;
+
+        &[data_display-ad="false"] {
+
+            top: -100%;
+        }
+
+        &[data_display-ad="true"] {
+
+            top: 0;
+            animation: ugaamFadeInDown 0.8s ease;
+        }
+
+        img {
+            
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        :is(a, button) {
+
+            &.ugaam-ad-close-button {
+
+                margin-top: -3px;
+                animation: ugaamFadeInDown 1.2s ease;
+            }
+        }
+    }
+
+    &.is-sticky-footer-ad {
+
+        top: auto;
+        bottom: 0;
+        
+        &[data_display-ad="false"] {
+
+            bottom: -100%;
+        }
+
+        &[data_display-ad="true"] {
+
+            animation: ugaamFadeInUp 0.8s ease;
+        }
+
+        img {
+            
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        :is(a, button) {
+
+            &.ugaam-ad-close-button {
+
+                margin-bottom: -3px;
+                animation: ugaamFadeInUp 1.2s ease;
+                border-radius: 0;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                box-shadow: 0 -2px 5px rgba( 0, 0, 0, 0.1);
+
+                svg {
+
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .ugaam-ad-wrapper-inner {
+
+            .ugaam-custom-ad {
+
+                flex-direction: column;
+            }
+        }
+    }
+
+    /**
+    *
+    * Alignment of sticky ads.
+    *
+    * @since 1.2.0
+    */
+    &:is(.is-left-align) {
+
+        left: 0;
+        right: auto;
+        width: max-content;
+    }
+
+    &:is(.is-right-align) {
+
+        right: 0;
+        left: auto;
+        width: max-content;
+    }
+
+    &:is(.is-center-align) {
+        
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: max-content;
+        justify-content: center;
+    } 
+}
