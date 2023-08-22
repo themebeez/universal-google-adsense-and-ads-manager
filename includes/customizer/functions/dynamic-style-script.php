@@ -12,7 +12,6 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 			add_action( 'wp_footer', array( $this, 'footer_script' ) );
 		}
 
-
 		public function dynamic_style() {
 			?>
 			<style>
@@ -33,20 +32,20 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 
 					if( !empty( $home_ad_margin ) ) {
 						?>
-						@media( min-width: 992px ) {
-							.ugaam-home-ad-wrapper {
+						@media( min-width: 993px ) {
+							.ugaam-ad-wrapper-outer.ugaam-home-ad-wrapper {
 								margin: <?php echo esc_attr( $home_ad_margin[0] ); ?>px <?php echo esc_attr( $home_ad_margin[1] ); ?>px <?php echo esc_attr( $home_ad_margin[2] ); ?>px <?php echo esc_attr( $home_ad_margin[3] ); ?>px;
 							}
 						}
 
-						@media( max-width: 991.98px ) {
-							.ugaam-home-ad-wrapper {
+						@media( max-width: 992px ) {
+							.ugaam-ad-wrapper-outer.ugaam-home-ad-wrapper {
 								margin: <?php echo esc_attr( $home_ad_margin[4] ); ?>px <?php echo esc_attr( $home_ad_margin[5] ); ?>px <?php echo esc_attr( $home_ad_margin[6] ); ?>px <?php echo esc_attr( $home_ad_margin[7] ); ?>px;
 							}
 						}
 
-						@media( max-width: 767.98px ) {
-							.ugaam-home-ad-wrapper {
+						@media( max-width: 767px ) {
+							.ugaam-ad-wrapper-outer.ugaam-home-ad-wrapper {
 								margin: <?php echo esc_attr( $home_ad_margin[8] ); ?>px <?php echo esc_attr( $home_ad_margin[9] ); ?>px <?php echo esc_attr( $home_ad_margin[10] ); ?>px <?php echo esc_attr( $home_ad_margin[11] ); ?>px;
 							}
 						}
@@ -69,20 +68,20 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 
 					if( !empty( $archive_ad_margin ) ) {
 						?>
-						@media( min-width: 992px ) {
-							.ugaam-archive-ad-wrapper {
+						@media( min-width: 993px ) {
+							.ugaam-ad-wrapper-outer.ugaam-archive-ad-wrapper {
 								margin: <?php echo esc_attr( $archive_ad_margin[0] ); ?>px <?php echo esc_attr( $archive_ad_margin[1] ); ?>px <?php echo esc_attr( $archive_ad_margin[2] ); ?>px <?php echo esc_attr( $archive_ad_margin[3] ); ?>px;
 							}
 						}
 
-						@media( max-width: 991.98px ) {
-							.ugaam-archive-ad-wrapper {
+						@media( max-width: 992px ) {
+							.ugaam-ad-wrapper-outer.ugaam-archive-ad-wrapper {
 								margin: <?php echo esc_attr( $archive_ad_margin[4] ); ?>px <?php echo esc_attr( $archive_ad_margin[5] ); ?>px <?php echo esc_attr( $archive_ad_margin[6] ); ?>px <?php echo esc_attr( $archive_ad_margin[7] ); ?>px;
 							}
 						}
 
-						@media( max-width: 767.98px ) {
-							.ugaam-archive-ad-wrapper {
+						@media( max-width: 767px ) {
+							.ugaam-ad-wrapper-outer.ugaam-archive-ad-wrapper {
 								margin: <?php echo esc_attr( $archive_ad_margin[8] ); ?>px <?php echo esc_attr( $archive_ad_margin[9] ); ?>px <?php echo esc_attr( $archive_ad_margin[10] ); ?>px <?php echo esc_attr( $archive_ad_margin[11] ); ?>px;
 							}
 						}
@@ -105,21 +104,21 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 
 					if( !empty( $post_page_ad_margin ) ) {
 						?>
-						@media( min-width: 992px ) {
-							.ugaam-singular-ad-wrapper {
-								margin: <?php echo esc_attr( $post_page_ad_margin[0] ); ?>px <?php echo esc_attr( $post_page_ad_margin[1] ); ?>px <?php echo esc_attr( $post_page_ad_margin[2] ); ?>px <?php echo esc_attr( $post_page_ad_margin[3] ); ?>px;
+						@media( min-width: 993px ) {
+							.ugaam-ad-wrapper-outer.ugaam-singular-ad-wrapper {
+								padding: <?php echo esc_attr( $post_page_ad_margin[0] ); ?>px <?php echo esc_attr( $post_page_ad_margin[1] ); ?>px <?php echo esc_attr( $post_page_ad_margin[2] ); ?>px <?php echo esc_attr( $post_page_ad_margin[3] ); ?>px;
 							}
 						}
 
-						@media( max-width: 991.98px ) {
-							.ugaam-singular-ad-wrapper {
-								margin: <?php echo esc_attr( $post_page_ad_margin[4] ); ?>px <?php echo esc_attr( $post_page_ad_margin[5] ); ?>px <?php echo esc_attr( $post_page_ad_margin[6] ); ?>px <?php echo esc_attr( $post_page_ad_margin[7] ); ?>px;
+						@media( max-width: 992px ) {
+							.ugaam-ad-wrapper-outer.ugaam-singular-ad-wrapper {
+								padding: <?php echo esc_attr( $post_page_ad_margin[4] ); ?>px <?php echo esc_attr( $post_page_ad_margin[5] ); ?>px <?php echo esc_attr( $post_page_ad_margin[6] ); ?>px <?php echo esc_attr( $post_page_ad_margin[7] ); ?>px;
 							}
 						}
 
-						@media( max-width: 767.98px ) {
-							.ugaam-singular-ad-wrapper {
-								margin: <?php echo esc_attr( $post_page_ad_margin[8] ); ?>px <?php echo esc_attr( $post_page_ad_margin[9] ); ?>px <?php echo esc_attr( $post_page_ad_margin[10] ); ?>px <?php echo esc_attr( $post_page_ad_margin[11] ); ?>px;
+						@media( max-width: 767px ) {
+							.ugaam-ad-wrapper-outer.ugaam-singular-ad-wrapper {
+								padding: <?php echo esc_attr( $post_page_ad_margin[8] ); ?>px <?php echo esc_attr( $post_page_ad_margin[9] ); ?>px <?php echo esc_attr( $post_page_ad_margin[10] ); ?>px <?php echo esc_attr( $post_page_ad_margin[11] ); ?>px;
 							}
 						}
 						<?php
@@ -141,21 +140,21 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 
 					if( !empty( $header_ad_margin ) ) {
 						?>
-						@media( min-width: 992px ) {
-							.is-sticky-header-ad-wrapper {
-								margin: <?php echo esc_attr( $header_ad_margin[0] ); ?>px <?php echo esc_attr( $header_ad_margin[1] ); ?>px <?php echo esc_attr( $header_ad_margin[2] ); ?>px <?php echo esc_attr( $header_ad_margin[3] ); ?>px;
+						@media( min-width: 993px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-header-ad-wrapper {
+								padding: <?php echo esc_attr( $header_ad_margin[0] ); ?>px <?php echo esc_attr( $header_ad_margin[1] ); ?>px <?php echo esc_attr( $header_ad_margin[2] ); ?>px <?php echo esc_attr( $header_ad_margin[3] ); ?>px;
 							}
 						}
 
-						@media( max-width: 991.98px ) {
-							.is-sticky-header-ad-wrapper {
-								margin: <?php echo esc_attr( $header_ad_margin[4] ); ?>px <?php echo esc_attr( $header_ad_margin[5] ); ?>px <?php echo esc_attr( $header_ad_margin[6] ); ?>px <?php echo esc_attr( $header_ad_margin[7] ); ?>px;
+						@media( max-width: 992px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-header-ad-wrapper {
+								padding: <?php echo esc_attr( $header_ad_margin[4] ); ?>px <?php echo esc_attr( $header_ad_margin[5] ); ?>px <?php echo esc_attr( $header_ad_margin[6] ); ?>px <?php echo esc_attr( $header_ad_margin[7] ); ?>px;
 							}
 						}
 
-						@media( max-width: 767.98px ) {
-							.is-sticky-header-ad-wrapper {
-								margin: <?php echo esc_attr( $header_ad_margin[8] ); ?>px <?php echo esc_attr( $header_ad_margin[9] ); ?>px <?php echo esc_attr( $header_ad_margin[10] ); ?>px <?php echo esc_attr( $header_ad_margin[11] ); ?>px;
+						@media( max-width: 767px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-header-ad-wrapper {
+								padding: <?php echo esc_attr( $header_ad_margin[8] ); ?>px <?php echo esc_attr( $header_ad_margin[9] ); ?>px <?php echo esc_attr( $header_ad_margin[10] ); ?>px <?php echo esc_attr( $header_ad_margin[11] ); ?>px;
 							}
 						}
 						<?php
@@ -177,21 +176,21 @@ if( ! class_exists( 'Universal_Google_AdSense_And_Ads_Manager_Dynamic_Style_Scri
 
 					if( !empty( $footer_ad_margin ) ) {
 						?>
-						@media( min-width: 992px ) {
-							.is-sticky-footer-ad-wrapper {
-								margin: <?php echo esc_attr( $footer_ad_margin[0] ); ?>px <?php echo esc_attr( $footer_ad_margin[1] ); ?>px <?php echo esc_attr( $footer_ad_margin[2] ); ?>px <?php echo esc_attr( $footer_ad_margin[3] ); ?>px;
+						@media( min-width: 993px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-footer-ad-wrapper {
+								padding: <?php echo esc_attr( $footer_ad_margin[0] ); ?>px <?php echo esc_attr( $footer_ad_margin[1] ); ?>px <?php echo esc_attr( $footer_ad_margin[2] ); ?>px <?php echo esc_attr( $footer_ad_margin[3] ); ?>px;
 							}
 						}
 
-						@media( max-width: 991.98px ) {
-							.is-sticky-footer-ad-wrapper {
-								margin: <?php echo esc_attr( $footer_ad_margin[4] ); ?>px <?php echo esc_attr( $footer_ad_margin[5] ); ?>px <?php echo esc_attr( $footer_ad_margin[6] ); ?>px <?php echo esc_attr( $footer_ad_margin[7] ); ?>px;
+						@media( max-width: 992px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-footer-ad-wrapper {
+								padding: <?php echo esc_attr( $footer_ad_margin[4] ); ?>px <?php echo esc_attr( $footer_ad_margin[5] ); ?>px <?php echo esc_attr( $footer_ad_margin[6] ); ?>px <?php echo esc_attr( $footer_ad_margin[7] ); ?>px;
 							}
 						}		
 
-						@media( max-width: 767.98px ) {
-							.is-sticky-footer-ad-wrapper {
-								margin: <?php echo esc_attr( $footer_ad_margin[8] ); ?>px <?php echo esc_attr( $footer_ad_margin[9] ); ?>px <?php echo esc_attr( $footer_ad_margin[10] ); ?>px <?php echo esc_attr( $footer_ad_margin[11] ); ?>px;
+						@media( max-width: 767px ) {
+							.ugaam-ad-wrapper-outer.is-sticky-footer-ad-wrapper {
+								padding: <?php echo esc_attr( $footer_ad_margin[8] ); ?>px <?php echo esc_attr( $footer_ad_margin[9] ); ?>px <?php echo esc_attr( $footer_ad_margin[10] ); ?>px <?php echo esc_attr( $footer_ad_margin[11] ); ?>px;
 							}
 						}			
 						<?php

@@ -121,9 +121,7 @@ const source__files__folders__to__compress = {
 
 gulp.task('scriptsTask', function () {
     return gulp.src(scriptpath.script_src)
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
+        .pipe(babel())
         .pipe(concat(output_js_file_name))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())

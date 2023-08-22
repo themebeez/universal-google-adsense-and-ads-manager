@@ -174,8 +174,9 @@ Google AMP support, GDPR support & many more...
 
 == Changelog ==
 
-= 1.1.3 - 21 August, 2023 =
+= 1.1.3 - ? August, 2023 =
 
+- Refactored: Public facing javaScript code.
 - Tested: WordPress version 6.3.0
 
 

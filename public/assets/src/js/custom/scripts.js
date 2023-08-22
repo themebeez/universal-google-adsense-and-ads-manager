@@ -232,12 +232,7 @@ UGAAM.helpers = {
 
                 const { header, footer, ...data } = cookieData;
 
-                if (
-                    !header ||
-                    !footer ||
-                    typeof header !== 'boolean' ||
-                    typeof footer !== 'boolean'
-                ) {
+                if (typeof header !== 'boolean' || typeof footer !== 'boolean') {
 
                     this.resetCookie();
                 }

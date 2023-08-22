@@ -1,55 +1,52 @@
 .ugaam-ad-wrapper-outer {
 
-    :is(button, a) {
+    :is(button.ugaam-ad-close-button) {
 
-        &.ugaam-ad-close-button {
+        position: relative;
+        z-index: 2;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        line-height: 1;
+        height: 30px;
+        width: 80px;
+        fill: var(--ugaam-close-button-color);
+        color: var(--ugaam-close-button-color);
+        background-color: var(--ugaam-close-button-background);
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.1);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        @include visibility( hidden );
+        @include transition_delay( 0.5s, ease, all );
 
-            position: relative;
-            z-index: 2;
-            display: none;
-            align-items: center;
-            justify-content: center;
+        &:is(:hover, :focus) {
+
+            text-decoration: none;
+            fill: var(--ugaam-close-button-hover-color);
+            color: var(--ugaam-close-button-hover-color);
+            background-color: var(--ugaam-close-button-hover-background);
+        }
+
+        &:is(:focus) {
+
+            outline: none;
+        }
+
+        svg {
+
+            display: inline-flex;
             line-height: 1;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            line-height: 1;
-            height: 30px;
-            width: 80px;
-            fill: var(--ugaam-close-button-color);
-            color: var(--ugaam-close-button-color);
-            background-color: var(--ugaam-close-button-background);
-            border-radius: 0;
-            box-shadow: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.1);
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            @include visibility( hidden );
-            @include transition_delay( 0.5s, ease, all );
-
-            &:is(:hover, :focus) {
-
-                text-decoration: none;
-                fill: var(--ugaam-close-button-hover-color);
-                color: var(--ugaam-close-button-hover-color);
-                background-color: var(--ugaam-close-button-hover-background);
-            }
-
-            &:is(:focus) {
-
-                outline: none;
-            }
-
-            svg {
-
-                display: inline-flex;
-                line-height: 1;
-                width: 16px;
-                height: 16px;
-            }
+            width: 16px;
+            height: 16px;
         }
     }
 }

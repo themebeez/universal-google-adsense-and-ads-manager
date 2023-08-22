@@ -1,14 +1,15 @@
 .ugaam-ad-wrapper-outer {
 
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
 
     a {
 
         position: relative;
         display: inline-flex;
-        width: max-content;
+        width: fit-content;
         max-width: 100%;
         z-index: 5;
         overflow: hidden;
@@ -18,7 +19,7 @@
 
         position: relative;
         display: inline-flex;
-        width: max-content;
+        width: fit-content;
         max-width: 100%;
         z-index: 5;
     }
@@ -27,7 +28,7 @@
 
         position: relative;
         display: inline-flex;
-        width: max-content;
+        width: fit-content;
         max-width: 100%;
         z-index: 5;
     }
@@ -82,8 +83,9 @@
     */
     &:is(.is-left-align) {
 
-        width: max-content;
-        justify-content: flex-start;
+        display: grid;
+        justify-content: start;
+        width: 100%;
 
         .ugaam-ad-wrapper-inner {
 
@@ -94,8 +96,9 @@
 
     &:is(.is-right-align) {
 
-        width: max-content;
-        justify-content: flex-end;
+        display: grid;
+        justify-content: end;
+        width: 100%;
 
         .ugaam-ad-wrapper-inner {
 
@@ -106,9 +109,9 @@
 
     &:is(.is-center-align) {
         
-        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr;
         justify-content: center;
-        margin: 0 auto;
 
         .ugaam-ad-wrapper-inner {
 
