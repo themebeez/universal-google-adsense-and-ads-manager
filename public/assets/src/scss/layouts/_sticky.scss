@@ -5,77 +5,81 @@
         display: flex;
         position: fixed;
         height: auto;
-        width: max-content;
+        width: fit-content;
         max-width: 100%;
         z-index: 10000000000000;
         @include transition_delay( 0.8s, ease, all );
 
-        :is(a, button) {
+        :is(button.ugaam-ad-close-button) {
 
-            &.ugaam-ad-close-button {
-
-                display: inline-flex;
-                @include visibility( visible );
-            }
-        }
-    }
-
-    &.is-sticky-header-ad {
-
-        top: 0;
-        bottom: auto;
-
-        &[data_display-ad="false"] {
-
-            top: -100%;
+            display: inline-flex;
+            @include visibility( visible );
         }
 
-        &[data_display-ad="true"] {
+        /**
+        *
+        * Header sticky ad.
+        *
+        * @since 1.2.0
+        */
+        &.is-sticky-header-ad {
 
             top: 0;
-            animation: ugaamFadeInDown 0.8s ease;
-        }
+            bottom: auto;
 
-        img {
-            
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
+            &[data_display-ad="false"] {
 
-        :is(a, button) {
+                top: -100%;
+            }
 
-            &.ugaam-ad-close-button {
+            &[data_display-ad="true"] {
+
+                top: 0;
+                animation: ugaamFadeInDown 0.8s ease;
+            }
+
+            :is(a, img, iframe) {
+                
+                overflow: hidden;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            :is(button.ugaam-ad-close-button) {
 
                 margin-top: -3px;
                 animation: ugaamFadeInDown 1.2s ease;
             }
         }
-    }
 
-    &.is-sticky-footer-ad {
+        /**
+        *
+        * Footer sticky ad.
+        *
+        * @since 1.2.0
+        */
+        &.is-sticky-footer-ad {
 
-        top: auto;
-        bottom: 0;
-        
-        &[data_display-ad="false"] {
-
-            bottom: -100%;
-        }
-
-        &[data_display-ad="true"] {
-
-            animation: ugaamFadeInUp 0.8s ease;
-        }
-
-        img {
+            top: auto;
+            bottom: 0;
             
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
+            &[data_display-ad="false"] {
 
-        :is(a, button) {
+                bottom: -100%;
+            }
 
-            &.ugaam-ad-close-button {
+            &[data_display-ad="true"] {
+
+                animation: ugaamFadeInUp 0.8s ease;
+            }
+
+            :is(a, img, iframe) {
+                
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            :is(button.ugaam-ad-close-button) {
 
                 margin-bottom: -3px;
                 animation: ugaamFadeInUp 1.2s ease;
@@ -89,43 +93,43 @@
                     transform: rotate(180deg);
                 }
             }
-        }
 
-        .ugaam-ad-wrapper-inner {
+            .ugaam-ad-wrapper-inner {
 
-            .ugaam-custom-ad {
+                .ugaam-custom-ad {
 
-                flex-direction: column;
+                    flex-direction: column;
+                }
             }
         }
+
+        /**
+        *
+        * Alignment of sticky ads.
+        *
+        * @since 1.2.0
+        */
+        &:is(.is-left-align) {
+
+            left: 0;
+            right: auto;
+            width: fit-content;
+        }
+
+        &:is(.is-right-align) {
+
+            right: 0;
+            left: auto;
+            width: fit-content;
+        }
+
+        &:is(.is-center-align) {
+            
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: fit-content;
+            justify-content: center;
+        } 
     }
-
-    /**
-    *
-    * Alignment of sticky ads.
-    *
-    * @since 1.2.0
-    */
-    &:is(.is-left-align) {
-
-        left: 0;
-        right: auto;
-        width: max-content;
-    }
-
-    &:is(.is-right-align) {
-
-        right: 0;
-        left: auto;
-        width: max-content;
-    }
-
-    &:is(.is-center-align) {
-        
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: max-content;
-        justify-content: center;
-    } 
 }
