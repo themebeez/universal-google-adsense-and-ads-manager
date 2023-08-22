@@ -23,7 +23,12 @@ add_action( 'universal_google_adsense_and_ads_manager_after_ad', 'universal_goog
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_custom_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_custom_ad_template() {
-		?><div class="ugaam-custom-ad"><button type="button" class="ugaam-ad-close-button">x</button><?php
+	?>
+		<div class="ugaam-custom-ad">
+			<button type="button" class="ugaam-ad-close-button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"></path></svg>
+			</button>
+	<?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_custom_ad', 'universal_google_adsense_and_ads_manager_before_custom_ad_template', 10 );
@@ -40,7 +45,12 @@ add_action( 'universal_google_adsense_and_ads_manager_after_custom_ad', 'univers
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_adsense_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_adsense_ad_template() {
-		?><div class="ugaam-adsense-ad"><button type="button" class="ugaam-ad-close-button">x</button><?php
+	?>
+		<div class="ugaam-adsense-ad">
+			<button type="button" class="ugaam-ad-close-button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"></path></svg>
+			</button>
+	<?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_adsense_ad', 'universal_google_adsense_and_ads_manager_before_adsense_ad_template', 10 );
@@ -94,7 +104,15 @@ add_action( 'universal_google_adsense_and_ads_manager_after_adsense_ad_mobile', 
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_header_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_sticky_header_ad_template() {
-		?><div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner"><?php
+	?>
+		<div 
+			class="ugaam-ad-wrapper-outer ugaam-sticky-ad is-sticky-header-ad <?php universal_google_adsense_and_ads_manager_sticky_header_wrapper_class(); ?>"
+			data_display-ad="false"
+			data_ad-location="header"
+		>
+			<div class="ugaam-ad-wrapper">
+				<div class="ugaam-ad-wrapper-inner">
+	<?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_sticky_header_ad', 'universal_google_adsense_and_ads_manager_before_sticky_header_ad_template', 10 );
@@ -112,7 +130,15 @@ add_action( 'universal_google_adsense_and_ads_manager_after_sticky_header_ad', '
 if( ! function_exists( 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template' ) ) {
 
 	function universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template() {
-		?><div class="ugaam-ad-wrapper-outer ugaam-sticky-ad ugaam-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"><div class="ugaam-ad-wrapper"><div class="ugaam-ad-wrapper-inner"><?php
+	?>
+		<div 
+			class="ugaam-ad-wrapper-outer ugaam-sticky-ad is-sticky-footer-ad <?php universal_google_adsense_and_ads_manager_sticky_footer_wrapper_class(); ?>"
+			data_display-ad="false"
+			data_ad-location="footer"
+			>
+				<div class="ugaam-ad-wrapper">
+					<div class="ugaam-ad-wrapper-inner">
+	<?php
 	}
 }
 add_action( 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad', 'universal_google_adsense_and_ads_manager_before_sticky_footer_ad_template', 10 );

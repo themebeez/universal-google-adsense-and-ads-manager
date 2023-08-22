@@ -1,11 +1,12 @@
 === Universal Google Adsense and Ads manager ===
-Contributors: themebeez
+
+Contributors: themebeez, addonify
 Donate link: https://themebeez.com/
 Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
-Requires at least: 5.0.0
-Tested up to: 6.1.1
-Requires PHP: 7.0.0
-Stable tag: 1.1.2
+Requires at least: 6.0.0
+Tested up to: 6.3.0
+Requires PHP: 7.4.0
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,7 +72,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-  		[ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
+  		[ugaam_ad] <--- Your AD code ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
@@ -79,13 +80,13 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 ``
 		[ugaam_ad] 
-		  <--- Your advertisement code goes here --->
+		  <--- Your AD code --->
 		  <!-- ad -->
-		  <--- The second advertisement code goes here --->
+		  <--- The second AD code --->
 		  <!-- ad -->
-		  <--- The third advertisement code goes here --->
+		  <--- The third AD code --->
 		  <!-- ad -->
-		  <--- The fourth advertisement code goes here --->  
+		  <--- The fourth AD code --->  
 		  [/ugaam_ad]
 ``
 
@@ -172,6 +173,11 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.1.3 - 21 August, 2023 =
+
+- Tested: WordPress version 6.3.0
+
 
 = 1.1.2 - 07 March, 2023 =
 
