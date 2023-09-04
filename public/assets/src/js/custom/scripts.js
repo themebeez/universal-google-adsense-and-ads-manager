@@ -17,22 +17,22 @@ const UGAAM = {
 
     /**
     * 
-    * @var {string} stickyAdCookie
-    * @var {Object} stickyAdCookieVal
+    * @var {string} stickyAdCookie.
+    * @var {object} stickyAdCookieVal.
     */
     stickyAdCookie: 'ugaam-sticky-ad',
     stickyAdCookieVal: { header: true, footer: true },
 
     /**
     * 
-    * @var {string} localStorageName
+    * @var {string} localStorageName.
     */
     localStorageName: 'ugaam-sticky-ad',
 
     /**
     * Handle sticky ad close button click event.
     * 
-    * @param {object} event
+    * @param {object} event.
     * @return {void} void.
     * @since 1.2.0
     */
@@ -63,7 +63,7 @@ const UGAAM = {
     /**
     * Render sticky ad based on cookie values.
     * 
-    * @param {null} null
+    * @param {null} null.
     * @return {void} void.
     * @since 1.2.0
     */
@@ -104,7 +104,9 @@ const UGAAM = {
 
     /**
     * Advertise plugin in console.
-    *
+    *   
+    * @param {null} null.
+    * @return {void} void.
     * @since 1.2.0
     */
     advertise: function () {
@@ -167,7 +169,7 @@ UGAAM.helpers = {
     * Helper: Update cookie values
     *
     * @param {string} key.
-    * @param {value} value.
+    * @param {string} value.
     * @return {void} void.
     * @since 1.2.0
     */
@@ -209,7 +211,7 @@ UGAAM.helpers = {
     * If key & value is not present in cookie, then set cookie with default values.
     * 
     * @param {null} null.
-    * @return {void} void
+    * @return {void} void.
     * @since 1.2.0
     */
     verifyCookie: function () {
@@ -316,7 +318,7 @@ UGAAM.api = {
     /**
     * API: Dispatch sticky ad closed event.
     * 
-    * @param {null} null
+    * @param {null} null.
     * @return {void} void.
     * @since 1.2.0
     */
