@@ -10,7 +10,7 @@ const UGAAM = {
 
     Load: function () {
 
-        this.advertise();
+        //this.advertise();
         this.renderStickyAds();
         this.handleStickyAdCloseEvent();
     },
