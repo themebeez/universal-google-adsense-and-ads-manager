@@ -1,0 +1,40 @@
+@mixin visibility( $visibility: hidden ) {
+    
+    @if $visibility == hidden {
+
+		opacity: 0;
+        visibility: hidden;
+		backface-visibility: hidden;
+    } 
+
+	@if $visibility == visible {
+
+		opacity: 1;
+        visibility: visible;
+		backface-visibility: visible;
+    } 
+}
+
+@mixin transition_delay( $delay: 0.5s, $function: ease, $property: all ) {
+
+    transition: $property $delay $function;
+}
+
+@mixin breakpoint( $breakpoint ) {
+
+    @if $breakpoint == 'ipad' {
+
+        @media ( max-width: 768px ) {
+
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'mobile' {
+
+        @media ( max-width: 575px ) {
+
+            @content;
+        }
+    }
+}

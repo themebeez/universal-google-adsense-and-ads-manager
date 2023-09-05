@@ -1,0 +1,44 @@
+{
+  "name": "universal-google-adsense-and-ads-manager",
+  "version": "1.0.0",
+  "description": "UGAAM is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "public": "gulp assets",
+    "pot": "wp i18n make-pot . languages/universal-google-adsense-and-ads-manager.pot",
+    "zip": "gulp zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themebeez/universal-google-adsense-and-ads-manager.git"
+  },
+  "keywords": [
+    "ugaam"
+  ],
+  "author": "themebeez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themebeez/universal-google-adsense-and-ads-manager/issues"
+  },
+  "homepage": "https://github.com/themebeez/universal-google-adsense-and-ads-manager#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.66.1"
+  }
+}

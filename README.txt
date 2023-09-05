@@ -1,11 +1,12 @@
 === Universal Google Adsense and Ads manager ===
-Contributors: themebeez
+
+Contributors: themebeez, addonify
 Donate link: https://themebeez.com/
 Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Advertising, Post Ads, Best AdSense,Home Page Ads, Scripts Manager, Advertising, amp, ad injection,ads, ad, ad inserter, ad injection, ads manager, ad widget, adrotate, advertise, advertisements, advertising, advert, amazon, buysellads, clickbank, mgid, doubleclick
-Requires at least: 5.0.0
-Tested up to: 6.1.1
-Requires PHP: 7.0.0
-Stable tag: 1.1.2
+Requires at least: 6.0.0
+Tested up to: 6.3.1
+Requires PHP: 7.4.0
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,7 +72,7 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 
 ``
-  		[ugaam_ad] <--- Your ad code goes here ---> [/ugaam_ad]
+  		[ugaam_ad] <--- Your AD code ---> [/ugaam_ad]
 ``
 
 **Multiple Advertisements Example :**
@@ -79,13 +80,13 @@ You can display an advertisement using shortcode anywhere on your website. Below
 
 ``
 		[ugaam_ad] 
-		  <--- Your advertisement code goes here --->
+		  <--- Your AD code --->
 		  <!-- ad -->
-		  <--- The second advertisement code goes here --->
+		  <--- The second AD code --->
 		  <!-- ad -->
-		  <--- The third advertisement code goes here --->
+		  <--- The third AD code --->
 		  <!-- ad -->
-		  <--- The fourth advertisement code goes here --->  
+		  <--- The fourth AD code --->  
 		  [/ugaam_ad]
 ``
 
@@ -128,39 +129,31 @@ If you love this plugin, We would like to welcome you to join your hands with us
 * Plugin support/bug report: [Click here](https://themebeez.com/support/)
 
 
-
 == Frequently Asked Questions ==
-
 
 = Where can I insert Google domain verification code? =
 
 To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager 
 
-
 = How can I insert my Google Adsense advertisement code? =
 
 To insert your Google adsense code go to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager 
 
-
 = Can I use custom image banner ads? =
 
-Yes
-
+Yes, you can use custom image banner ads.
 
 = Can I use other advertisement network ads? =
 
 Yes, you can even use to promote affiliation of bluehost, siteground, amazon etc.
 
-
 = Do you provide free support? =
 
 Yes, we do. Kindly visit us at [support page](https://themebeez.com/support/) & ask for support. 
 
-
 = What are the upcoming features? =
 
 Google AMP support, GDPR support & many more...
-
 
 
 == Screenshots ==
@@ -172,6 +165,11 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.1.3 - 05 September, 2023 =
+
+- Refactored: Public facing javaScript code.
+- Tested: WordPress version 6.3.0.
 
 = 1.1.2 - 07 March, 2023 =
 
@@ -190,45 +188,37 @@ Google AMP support, GDPR support & many more...
 
 - Tested: WordPress version 6.0.2
 
-
 = 1.0.8 - 23 January, 2022 =
 
 - Tested: WordPress version 5.9
 - Tested: PHP version 7.4
-
 
 = 1.0.7 - July 20, 2021 = 
 
 - Updated: Style and scripts enqeueue
 - Removed: Unwanted files
 
-
 = 1.0.6 - August 13, 2020 = 
 - Testing: Tested on WordPress version 5.5
-
 
 = 1.0.5 - July 28, 2019 = 
 
 - Added: Video at dashboard 
 - Fixed: Documenation link at UGAAM dashboard welcome page
 
-
 = 1.0.4 - July 21, 2019 = 
 
 - Fixed: Fatal error
-
 
 = 1.0.3 - July 19, 2019 =
 
 - Custom field added to hide ad content in posts and pages
 - Mobile detector added
 
-
 = 1.0.2 - June 18, 2019 =
 
 - Issues on post and page single fixed
 - Other minor fixes
-
 
 = 1.0.1 - June 17, 2019 = 
 
