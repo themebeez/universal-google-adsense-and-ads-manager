@@ -6,7 +6,7 @@ Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Ad
 Requires at least: 6.0.0
 Tested up to: 6.3.1
 Requires PHP: 7.4.0
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Universal Google AdSense and Ads Manager is a flexible easy to use Google Adsens
 
 == Description ==
 
-[Universal Google AdSense and Ads Manager](https://themebeez.com/plugins/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google AdSense and Ads Manager (UGAAM) allows WordPress users to monetise your website easily.
+[Universal Google AdSense and Ads Manager](https://themebeez.com/plugins/universal-google-adsense-ads-manager) is a flexible easy to use Google Adsense, custom ads & script manager WordPress plugin. Universal Google AdSense and Ads Manager (UGAAM) allows WordPress users to monetize your website easily.
 
 UGAAM supports Google Ads ( including Google auto Ads ), Custom image banner ads, other advertisement network based on javascript ( Example: MGID, buy sell ads, Bidvertiser, affiliates ads etc ).
 
@@ -124,7 +124,7 @@ If you love this plugin, We would like to welcome you to join your hands with us
 == IMPORTANT LINKS == 
 
 * Plugin page: [Click here](https://themebeez.com/plugins/universal-google-adsense-ads-manager)
-* Plugin documenation page: [Click here](https://themebeez.com/ugaam-plugin-documentation)
+* Plugin documentation page: [Click here](https://themebeez.com/ugaam-plugin-documentation)
 * Plugin review/feedback: [Click here](https://wordpress.org/support/plugin/universal-google-adsense-and-ads-manager/reviews/)
 * Plugin support/bug report: [Click here](https://themebeez.com/support/)
 
@@ -133,7 +133,7 @@ If you love this plugin, We would like to welcome you to join your hands with us
 
 = Where can I insert Google domain verification code? =
 
-To verify your domian with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager 
+To verify your domain with Google kindly navigate to Dashboard > Appearance > Customizer > Universal Google AdSense & Ad Manager > Header/Footer Script manager 
 
 = How can I insert my Google Adsense advertisement code? =
 
@@ -165,6 +165,10 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.1.5 - 27 September, 2023 =
+
+- Fix: Image alignment issue.
 
 = 1.1.4 - 26 September, 2023 =
 
@@ -199,7 +203,7 @@ Google AMP support, GDPR support & many more...
 
 = 1.0.7 - July 20, 2021 = 
 
-- Updated: Style and scripts enqeueue
+- Updated: Style and scripts enqueue
 - Removed: Unwanted files
 
 = 1.0.6 - August 13, 2020 = 
@@ -208,7 +212,7 @@ Google AMP support, GDPR support & many more...
 = 1.0.5 - July 28, 2019 = 
 
 - Added: Video at dashboard 
-- Fixed: Documenation link at UGAAM dashboard welcome page
+- Fixed: Documentation link at UGAAM dashboard welcome page
 
 = 1.0.4 - July 21, 2019 = 
 
