@@ -8,9 +8,6 @@
     a {
 
         position: relative;
-        display: inline-flex;
-        width: 100%;
-        max-width: 100%;
         z-index: 5;
         overflow: hidden;
     }
@@ -28,7 +25,7 @@
 
         position: relative;
         display: inline-flex;
-        width: 100%;
+        width: auto;
         max-width: 100%;
         z-index: 5;
     }
