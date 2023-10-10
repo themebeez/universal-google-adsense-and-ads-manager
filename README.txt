@@ -6,7 +6,7 @@ Tags: Google, Google AdSense, AdSense, Ad manager, Ad Injection, Ad Inserter, Ad
 Requires at least: 6.0.0
 Tested up to: 6.3.1
 Requires PHP: 7.4.0
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -165,6 +165,10 @@ Google AMP support, GDPR support & many more...
 
 
 == Changelog ==
+
+= 1.1.6 - 10 October, 2023 =
+
+- Fix: Possible `iframe` alignment issue.
 
 = 1.1.5 - 27 September, 2023 =
 
